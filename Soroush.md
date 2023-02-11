@@ -1,0 +1,2 @@
+# About my project plan
+I want to create features to add "book a table" to our website. In this way, users and customers can easily reserve a table for themselves And be sure that they will not have to wait until their turn arrives. In this feature I want to use a Form and inside it some inputs to ask customers about 'party size', 'area (inside or outside the restaurant'), 'date', 'time', 'contact information (like email, first and last name and phone number)" and finally their login information to reserve a table.
