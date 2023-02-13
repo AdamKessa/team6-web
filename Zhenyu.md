@@ -1,2 +1,0 @@
-# About my project plan
-I want to create features to add "post the comment" to our website. In this way, users and customers can share some story or comment the food in our website, for the other customers could get the imformation from other customers. In this feature I want to use message board which the customers can post text or images by themself, there is some rules they need to follow. They could leave a name or just anonymous to post comment. And the manager also has the right to deal with the message if the message is broken the rules.
