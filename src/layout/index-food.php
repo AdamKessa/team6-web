@@ -1,9 +1,12 @@
+<?php
+$title = "foodmenu";
+include "header.php" ?>
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UZBEK FOOD</title>
+    <title><?php echo $title  ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sofia+Sans:wght@200&display=swap" rel="stylesheet">
@@ -15,52 +18,275 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="stylefood.css">
         <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png" >
+        <style>
+            /* -----cont------ */
+
+
+
+body{
+  background-image: url(images/salad.jpg);
+  color: white;
+  text-align: center;    
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column;
+  overflow-x: hidden; 
+}
+
+
+nav{
+  margin: 0;
+  
+}
+
+
+.login{
+  width: 100px;
+}
+
+
+.top {
+  /* margin-left: 10%; */
+
+
+  
+}
+.menufood{
+  margin-left: 10%;
+  margin-right: 10%;
+ 
+}
+.mt-5 {
+  font-size: 16px;
+}
+.form-control:active,
+.form-control:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+h1{
+  margin-top: 10px;
+  font-family: 'Dancing Script', cursive; font-size: 40px;
+}
+.col-md-3 p{
+  color:white;
+  text-align:center;
+
+}
+h2 {
+  font-size: 25px !important;
+  color:rgb(255, 119, 0) !important;
+  text-align: center;
+}
+a, nav a:visited, nav a:active{
+  text-decoration: none; 
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+a:hover {
+  color: rgb(255, 138, 4);
+}
+nav {
+  /* margin-top: 10px; */
+  width: 100%;
+  /* margin-left: 135px; */
+  /* padding-left: 135%; */
+   font-weight: bold;
+  background: linear-gradient(to top, transparent, rgb(0, 0, 0)),
+  url("critters.png") ;
+  border-width: 0;
+}
+.navbar li{
+  margin-left:5px;
+  margin-right:5px;
+  border-width: 0;
+}
+#navend {
+  border-right: 2px solid gray;
+  padding-right: 5px;
+}
+#facebook, #twitter{
+  padding-left: 5px;
+}
+.dropdown-item {
+    font-size: 20px;
+}
+.navbar
+{
+  border-width: 0;
+}
+.modal-footer p, .overlay .btn p {
+  padding-top: 6px;
+}
+/* image hover*/
+.imagehover2 {
+  position: relative;
+  width: 100%;
+}
+
+.image2 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:transparent;
+  z-index:1;
+}
+
+.imagehover2:hover .overlay {
+  opacity: 1;
+}
+
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#footer1 {
+  margin: 0 auto; 
+  margin-top: 20px;
+  background-color: rgb(172, 107, 72);
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding:0 10% 5px 10%;
+  ppadding-left: 5px;
+}
+h3{
+  font-family: 'Frutiger', cursive; font-size: 35px;
+}
+#footer2 {
+  margin: 0 auto;
+  bbackground-color: rgb(49, 44, 44);    
+  color: white;
+  text-align: center;
+  font-size: 19px;
+
+  hheight: 320px;
+  bbackground-image: url(images/back2.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+  
+}
+#Dubai{
+  width: 270px; 
+  height: 350px;
+}
+
+.carousel-inner{
+  
+  text-align: center;
+  height: 360px;
+  
+}
+.carousel-image  {
+  position: absolute; 
+  
+  
+  
+}
+.swipeimage{
+  position: relative;
+  bottom:20%;
+}
+
+.swipeimage1{
+  position: relative;
+  bottom:10%;
+}
+
+#footer3 {
+  margin-top: 10px;
+  
+  abackground-color: rgb(171, 98, 35);
+  height: 100%;
+  color: white;
+  text-align: start;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-top: 15px;
+  height: 346px;
+  background-image: url(images/back4.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+hr.style1{
+  border-top: 4px solid #fefefe;
+}
+#firstcol {
+  padding-top: 15px;
+}
+
+.imagehover2 row mt-5{
+  margin-top: 100px;
+}
+.col-md-6{
+  left: 10%;
+
+}
+
+
+@media (min-width: 1200px){
+.container {
+  width: 100%;
+}
+}
+@media (max-width: 900px) {
+  nav {
+    /* margin-top: 20px; */
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+    justify-content: center;
+}
+.swipeimage{
+  position: relative;
+  bottom: 0%;
+}
+.swipeimage1{
+  position: relative;
+  bottom: 0%;
+}
+#Dubai{
+  width: 270px; 
+  height: 300px;
+}
+.carousel-inner{
+  
+  text-align: center;
+  height: 320px;
+  
+}
+}
+
+.AppStore {
+  width: 100px;
+}
+        </style>
   </head>
   <body>
     
-        <div class="top">
-          <nav class="navbar navbar-expand-sm navbar-dark fs-3">
-            <div class="container-fluid">
-              <img class="login" src="images/R3.png" alt="Moroccan tomato salad" >
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link nav-link text-light" href="index.html"><p style="color: rgb(255, 106, 0);"><b>HOME</b></p></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link text-light" href="#">ABOUT US</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle nav-link text-light" href="#" role="button" data-bs-toggle="dropdown">MENU</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item text-white bg-dark" href="food.html">FOOD</a></li>
-                      <li><a class="dropdown-item text-white bg-dark" href="salad.html">SALAD</a></li>
-                      <li><a class="dropdown-item text-white bg-dark" href="drinks.html">DRINK</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link text-light" href="#">GALLARY</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link text-light" href="#">RESERVATION</a>
-                  </li>  
-                  <li class="nav-item" id="navend">
-                    <a class="nav-link nav-link text-light" href="#">BLOG</a>
-                  </li>
-                  <li class="nav-item" id="facebook">
-                    <a class="nav-link nav-link text-light" href="#"><i class="bi bi-facebook"></i></a>
-                  </li> 
-                  <li class="nav-item" id="twitter">
-                    <a class="nav-link nav-link text-light" href="#"><i class="bi bi-twitter"></i></a>
-                  </li>                                   
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
+       
           
 
           
@@ -278,32 +504,12 @@
                 </div>     
               </div>
             </div>  
-            <div class="row" id="footer3">
-              <div class="col-md-6 " >
-                <p><b>LOCATION</b></p> 
-                <p>Rooftop-20th Floor, Grand Millennium Hotel, Marasi Drive Street,</p> 
-                <p>Business Bay, Dubai, UAE</p>
-                <p>Complimentary Valet Available</p>
-                <div>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18906.129712753736!2d6.722624160288201!3d60.12672284414915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463e997b1b6fc09d%3A0x6ee05405ec78a692!2sJ%C4%99zyk%20trola!5e0!3m2!1spl!2spl!4v1672239918130!5m2!1spl!2spl" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-              </div>
-              <div class="col-md-6 " >
-                <p><b>OPENING HOURS</b></p> 
-                <p>For Booking & Reservations email us at hamk@uzbox.com </p>
-                <p>or call us at +671 00 11 3377</p>  
-                <p>Restaurant</p> 
-                <p>12 PM to 2 AM</p> 
-                <p>Lounge</p>
-                <p>6 PM to 3 AM</p>
-                <a href="#">FOLLOW US</a>
-              </div>               
-            </div>
+            
         </div>           
          
            
   
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
-</html>
+
+
+<?php include "footer.php" ?>
