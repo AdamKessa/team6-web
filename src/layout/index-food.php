@@ -67,9 +67,11 @@ nav{
   outline: none;
   box-shadow: none;
 }
-h1{
-  margin-top: 10px;
-  font-family: 'Dancing Script', cursive; font-size: 40px;
+h1 {
+  font-family: 'Dancing Script', cursive !important;
+  font-size:55px !important;
+  text-align: center;
+  color:white !important;
 }
 .col-md-3 p{
   color:white;
