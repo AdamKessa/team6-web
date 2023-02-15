@@ -1,0 +1,71 @@
+
+body {    
+    color: white;
+    text-align: center;
+ }
+.big-img-1 {
+  background-image: url(images/Home.jpg);
+}
+.big-img-2 {
+  background-image: url(images/Home4.jpg);
+}
+.big-img-3 {
+  background-image: url(images/Home6.jpg);
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+.carousel-image {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+.container, #carouselExampleControls {
+  smax-width:  1383.33px;
+  
+}
+#navbarNavAltMarkup {
+  padding-left: 50px;
+}
+.name, .name2 {
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    font-size: 20px;
+}
+.name:before {
+    content: "";
+    display: block;
+    width: 380px;
+    height: 2px;
+    background: #fdfdfe;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .name:after {
+    content: "";
+    display: block;
+    width: 380px;
+    height: 2px;
+    background: #fdfdff;
+    right:0;
+    top: 50%;
+    position: absolute;
+  }
+
+  .row2 {
+    margin-top: 180px;
+  }
+  .navbar-brand{
+    padding-left: 52px;
+  }
+  .logo {
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    font-size: 20px;
+    background-color: blue;
+  }
