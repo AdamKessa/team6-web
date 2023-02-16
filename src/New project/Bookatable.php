@@ -40,12 +40,19 @@ h2 , h3 {
   margin-left: 1%;
   background-color: rgb(43, 26, 8);
 }
+.col-xs-6 {
+    padding-left: 0 !important;
+}
+#tel {
+    margin-left: 0;;
+}
 
         </style>
         
   </head>
-  <body>   
-  <div class="row">
+  <form action="" method="post">
+     <body>   
+             <div class="row">
               <h2>Book a table</h2>
              </div>
              <div class="row">
@@ -88,22 +95,33 @@ h2 , h3 {
                       format: 'hh:mm A',
                   });
                 });
-                </script> 
-                 <form action="" method="post">
-                    <input type="text" name="fname" placeholder="Fisrt Name" required><br><br>
-                    <input type="text" name="lname" placeholder="Last Name" required><br><br>
-                    <input type="text" name="city" placeholder="City" required><br><br>                 
-                 </form>                   
-                <button type="submit" class="btn btn-primary" value="Submit" name="submit">Submit</button>
-              </form>
+                </script>
+                  <div class="col-xs-6">                  
+                    <input class="form-control" type="text" form-select-lg  name="fname" placeholder="Fisrt Name             required" required>
+                  </div>
+                  <div class="col-xs-6">   
+                    <input class="form-control " type="text" form-select-lg name="lname" placeholder="Last Name             required" required><br><br>
+                  </div>
+                    <input class="form-control" type="text" name="email" placeholder="Email                    required" required><br><br>                 
+                <div class="row" id="tel">
+                    <div class="input-group-prepend w-auto">                        
+                        <!-- <span class="input-group-text input-sm bg-secondary"><b>+358</b></span> -->
+                        <button type="button" class="btn btn-primary "><b>+358</b></button>
+                    </div>
+                    <input type="text" class="form-control w-75" aria-label="Amount (to the nearest dollar)">
+                </div> <br><br>                 
+                <button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Submit</button>
+  </form>
               </div>
               <div class="col" id="">
                 <img class="image" src="images/Bookatable.jpg" alt="Moroccan tomato salad">                
               </div>              
-             </div>      
+             </div> 
+        
 
 
 
 
 
 <?php include "../layout/footer.php" ?>
+         
