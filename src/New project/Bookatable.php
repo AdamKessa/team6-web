@@ -58,6 +58,37 @@ h2 , h3 {
                   <option>4 persons</option>
                   <option>+5 persons</option>
                 </select>
+                <div class="">
+                  <div class="row">
+                    <div class='col-sm-6'>
+                      <div class="form-group">
+                        <span>Select time with Date</span>
+                        <div class='input-group date' id='datetimepicker2'>
+                          <input type='text' class="form-control" />
+                          <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                          </span>
+                        </div>
+                        <br/>
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <script>
+                    $(function() {
+                  $('#datetimepicker1').datetimepicker({
+                            format: 'HH:mm'
+                  });
+                  
+                  $('#datetimepicker2').datetimepicker({
+                            format: 'MM/DD/YYYY HH:mm'
+                  });
+                  $('#datetimepicker3').datetimepicker({
+                      format: 'hh:mm A',
+                  });
+                });
+                </script> 
 
 
 
