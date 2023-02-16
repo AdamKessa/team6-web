@@ -38,7 +38,11 @@ h2 , h3 {
 }
 #booking {
   margin-left: 1%;
-  background-color: rgb(43, 26, 8);
+  background-image: url(images/istockphoto-1312307362-170667a.jpg);
+  background-size: cover;
+  bbackground-attachment:fixed;
+  background-repeat: no-repeat;
+  
 }
 .col-xs-6 {
     padding-left: 0 !important;
@@ -47,8 +51,7 @@ h2 , h3 {
     margin-left: 0;;
 }
 
-        </style>
-        
+ </style>        
   </head>
   <form action="" method="post">
      <body>   
@@ -69,9 +72,9 @@ h2 , h3 {
                   <div class="row">
                     <div class='col-sm-6'>
                       <div class="form-group">
-                        <span>Select time with Date</span>
+                        <!-- <span>Select time with Date</span> -->
                         <div class='input-group date' id='datetimepicker2'>
-                          <input type='text' class="form-control" />
+                          <input type='text' class="form-control"  placeholder="Select time with Date" />
                           <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                           </span>
@@ -97,7 +100,7 @@ h2 , h3 {
                 });
                 </script>
                   <div class="col-xs-6">                  
-                    <input class="form-control" type="text" form-select-lg  name="fname" placeholder="Fisrt Name             required" required>
+                    <input class="form-control" type="text" form-select-lg  name="fname" placeholder="Fisrt Name                     required" required>
                   </div>
                   <div class="col-xs-6">   
                     <input class="form-control " type="text" form-select-lg name="lname" placeholder="Last Name             required" required><br><br>
@@ -108,7 +111,7 @@ h2 , h3 {
                         <!-- <span class="input-group-text input-sm bg-secondary"><b>+358</b></span> -->
                         <button type="button" class="btn btn-primary "><b>+358</b></button>
                     </div>
-                    <input type="text" class="form-control w-75" aria-label="Amount (to the nearest dollar)">
+                    <input type="text" class="form-control w-75" aria-label="Amount (to the nearest dollar)" placeholder="Mobile Phone">
                 </div> <br><br>                 
                 <button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Submit</button>
   </form>
@@ -123,5 +126,5 @@ h2 , h3 {
 
 
 
-<?php include "../layout/footer.php" ?>
+<!-- <?php include "../layout/footer.php" ?> -->
          
