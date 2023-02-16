@@ -210,7 +210,9 @@ hr.style1{
 #Linediv{ 
   display: block !important;
 }
-
+.modal-body p{
+  color:black !important;
+}
 @media (min-width: 1200px){
 .container {
   width: 100%;

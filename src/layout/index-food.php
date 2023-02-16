@@ -246,7 +246,9 @@ hr.style1{
   left: 10%;
 
 }
-
+.modal-body p{
+  color:black !important;
+}
 
 @media (min-width: 1200px){
 .container {
