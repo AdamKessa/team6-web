@@ -89,6 +89,18 @@ h2 , h3 {
                   });
                 });
                 </script> 
+                 <form action="" method="post">
+                    <input type="text" name="fname" placeholder="Fisrt Name" required><br><br>
+                    <input type="text" name="lname" placeholder="Last Name" required><br><br>
+                    <input type="text" name="city" placeholder="City" required><br><br>                 
+                 </form>                   
+                <button type="submit" class="btn btn-primary" value="Submit" name="submit">Submit</button>
+              </form>
+              </div>
+              <div class="col" id="">
+                <img class="image" src="images/Bookatable.jpg" alt="Moroccan tomato salad">                
+              </div>              
+             </div>      
 
 
 
