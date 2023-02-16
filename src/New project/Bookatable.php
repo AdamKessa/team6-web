@@ -1,6 +1,6 @@
 <?php
 $title = "drinkmenu";
-include "../layout/header.php" ?>
+include "header.php" ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -75,7 +75,7 @@ h2 , h3 ,label {
                   </div>
                 </div><br><br>
                   <div class="col-xs-6">                  
-                    <input class="form-control" type="text" form-select-lg  name="fname" placeholder="Fisrt Name                     required" required>
+                    <input class="form-control" type="text" form-select-lg  name="fname" placeholder="Fisrt Name                         required" required>
                   </div>
                   <div class="col-xs-6">   
                     <input class="form-control " type="text" form-select-lg name="lname" placeholder="Last Name             required" required><br><br>
@@ -101,5 +101,5 @@ h2 , h3 ,label {
 
 
 
-<?php include "../layout/footer.php" ?>
+<?php include "footer.php" ?>
          
