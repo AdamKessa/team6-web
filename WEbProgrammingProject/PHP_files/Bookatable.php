@@ -65,7 +65,9 @@ if(isset($_POST['submit'])){
   $email=$_POST['email'];
   $phone_number=$_POST['phonenumber'];
 }
-
+include 'bookatable-db.php';
+$sql= "insert into reservation (party_size, date, time, fname, laname, email, phone_number) values('$party_size',
+ '$date', '$time', '$fname', '$laname', '$email', '$phone_number')";
 ?>
         
 
