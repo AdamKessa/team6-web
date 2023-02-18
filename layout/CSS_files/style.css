@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/salad.jpg);
+    background-image: url('../images/salad.jpg');
     color: white;
     text-align: center;    
     background-size: cover;
@@ -148,7 +148,7 @@ body {
     font-size: 19px;
     padding-top: 5px;
     hheight: 270px;
-    bbackground-image: url(images/back2.jpeg);
+    bbackground-image: url(../images/back2.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
   }
@@ -172,7 +172,7 @@ body {
     padding-left: 5px;
     padding-top: 15px;
     height: 346px;
-    background-image: url(images/back4.jpg);
+    background-image: url(../images/back4.jpg);
     background-repeat: no-repeat;
     background-size:cover;
   }
