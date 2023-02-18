@@ -246,7 +246,7 @@ hr.style1{
                       <a class="nav-link nav-link text-light" href="">GALLERY</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link text-light" href="">RESERVATION</a>
+                      <a class="nav-link nav-link text-light" href="Bookatable.php">RESERVATION</a>
                     </li>  
                     <li class="nav-item" id="navend">
                       <a class="nav-link nav-link text-light" href="">BLOG</a>
