@@ -28,25 +28,25 @@ include "header.php" ?>
                 <div class="row">
                   <label>Please choose Date and Time</label>
                   <div class="col-xs-4" id="DateandTime">
-                    <input class="w-50 " type="date" name="bdate" placeholder="Date">
+                    <input class="w-50 " type="date" name="bdate" placeholder="Date" required>
                   </div>
                   <div class="col-xs-4" id="DateandTime">
-                    <input  class="w-50" type="time" name="btime" placeholder="Time">
+                    <input  class="w-50" type="time" name="btime" placeholder="Time"  required>
                   </div>
                 </div><br><br>
                   <div class="col-xs-6">                  
-                    <input class="form-control" type="text" form-select-lg  name="fname" placeholder="Fisrt Name                         required" required>
+                    <input class="form-control" type="text" form-select-lg  name="fname" placeholder="Fisrt Name" required>
                   </div>
                   <div class="col-xs-6">   
-                    <input class="form-control " type="text" form-select-lg name="lname" placeholder="Last Name             required" required><br><br>
+                    <input class="form-control " type="text" form-select-lg name="lname" placeholder="Last Name" required><br><br>
                   </div>
-                    <input class="form-control" type="text" name="email" placeholder="Email                    required" required><br><br>                 
+                    <input class="form-control" type="text" name="email" placeholder="Email" required><br><br>                 
                 <div class="row" id="tel">
                     <div class="input-group-prepend w-auto">                        
                         <!-- <span class="input-group-text input-sm bg-secondary"><b>+358</b></span> -->
                         <button type="button" class="btn btn-primary "><b>+358</b></button>
                     </div>
-                    <input type="text" class="form-control w-75" placeholder="Mobile Phone">
+                    <input type="text" class="form-control w-75" placeholder="Mobile Phone" name="phonenumber" required>
                 </div> <br><br>                 
                 <button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Submit</button>
   </form>
@@ -55,6 +55,18 @@ include "header.php" ?>
                 <img class="image" src="../images/Bookatable.jpg" alt="Moroccan tomato salad">                
               </div>              
              </div> 
+<?php
+if(isset($_POST['submit'])){
+  $party_size=$_POST['sellist1'];
+  $date=$_POST['bdate'];
+  $time=$_POST['btime'];
+  $fname=$_POST['fname'];
+  $laname=$_POST['lname'];
+  $email=$_POST['email'];
+  $phone_number=$_POST['phonenumber'];
+}
+
+?>
         
 
 
