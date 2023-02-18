@@ -7,19 +7,17 @@ include "header.php" ?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="../CSS_files/home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS_files/home.css">
+    <link rel="stylesheet" href="styleAsror.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;family=Sofia+Sans:wght@200&amp;display=swap"
         rel="stylesheet">
     <title><?php echo $title  ?></title>
 
     <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png" >
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="../CSS_files/style.css">
-</head>
+    </head>
 
 <body>
    <div>
@@ -66,7 +64,7 @@ include "header.php" ?>
        <img src="https://avatars.dzeninfra.ru/get-zen_doc/30884/pub_5b0f05cbc3f75e00a7e3e3b0_5b0f15fcd7bf2102f7e242a6/scale_1200"
            alt="" class="pic">
        <img src="https://bystryerecepty.ru/wp-content/uploads/2022/06/blobid1530258764605.jpg" alt="" class="pic">
-       <img src="../images/sumalyak.jpg" alt="" class="pic">
+       <img src="images/sumalyak.jpg" alt="" class="pic">
 
 </div>
 </article>
