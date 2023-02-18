@@ -16,7 +16,7 @@ include "header.php" ?>
               <h2>Book a table</h2>
              </div>
              <div class="row">
-              <div class="col" id="booking">
+              <div class="col" id="booking" style="background-image: url('../images/istockphoto-1312307362-170667a.jpg')">
               <label for="sel1" class="form-label">Party size</label>
                 <select class="form-select form-select-lg mb-5" id="sel1" name="sellist1">
                   <option>1 person</option>
@@ -48,7 +48,7 @@ include "header.php" ?>
                     </div>
                     <input type="text" class="form-control w-75" placeholder="Mobile Phone" name="phonenumber" required>
                 </div> <br><br>                 
-                <button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Submit</button>
+                <button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Confirm and Book</button>
   </form>
               </div>
               <div class="col" id="">
@@ -56,6 +56,9 @@ include "header.php" ?>
               </div>              
              </div> 
 <?php
+
+$reservationcode = substr(str_shuffle(str_repeat("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", 8)), 0, 8);
+
 if(isset($_POST['submit'])){
   $party_size=$_POST['sellist1'];
   $date=$_POST['bdate'];
@@ -65,10 +68,10 @@ if(isset($_POST['submit'])){
   $email=$_POST['email'];
   $phone_number=$_POST['phonenumber'];
 include 'bookatable-db.php';
-$sql= "insert into reservation (party_size, date, time, fname, lname, email, phone_number) values('$party_size',
- '$date', '$time', '$fname', '$lname', '$email', '$phone_number')";
+$sql= "insert into reservation (party_size, date, time, fname, lname, email, phone_number, reservationCode) values('$party_size',
+ '$date', '$time', '$fname', '$lname', '$email', '$phone_number', '$reservationcode')";
  if ($conn->query($sql)==True){
-     echo "Your reservation is done";
+     echo "Your reservation is done anf your reservation code is $reservationcode";
  }
  else {
      echo "Error : please check your information" .$conn->error; 
