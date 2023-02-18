@@ -52,10 +52,9 @@ include "header.php" ?>
   </form>
               </div>
               <div class="col" id="">
-                <img class="image" src="../images/Bookatable.jpg" alt="Moroccan tomato salad">                
-              </div>              
-             </div> 
-<?php
+                <img class="image" src="../images/Book2.avif" alt="Moroccan tomato salad">                
+              </div>
+              <?php
 
 $reservationcode = substr(str_shuffle(str_repeat("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", 8)), 0, 8);
 
@@ -71,13 +70,16 @@ include 'bookatable-db.php';
 $sql= "insert into reservation (party_size, date, time, fname, lname, email, phone_number, reservationCode) values('$party_size',
  '$date', '$time', '$fname', '$lname', '$email', '$phone_number', '$reservationcode')";
  if ($conn->query($sql)==True){
-     echo "Your reservation is done anf your reservation code is $reservationcode";
+    //  echo "Your reservation is done anf your reservation code is $reservationcode";
+    echo "<div style ='font:25px Arial,tahoma,sans-serif;color:#F05C25';padding-left: 30px> Your reservation is done and your reservation code is $reservationcode</div>";
  }
  else {
      echo "Error : please check your information" .$conn->error; 
     }
   }
-?>
+?>              
+             </div> 
+
         
 
 
