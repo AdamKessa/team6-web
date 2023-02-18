@@ -61,13 +61,19 @@ if(isset($_POST['submit'])){
   $date=$_POST['bdate'];
   $time=$_POST['btime'];
   $fname=$_POST['fname'];
-  $laname=$_POST['lname'];
+  $lname=$_POST['lname'];
   $email=$_POST['email'];
   $phone_number=$_POST['phonenumber'];
-}
 include 'bookatable-db.php';
-$sql= "insert into reservation (party_size, date, time, fname, laname, email, phone_number) values('$party_size',
- '$date', '$time', '$fname', '$laname', '$email', '$phone_number')";
+$sql= "insert into reservation (party_size, date, time, fname, lname, email, phone_number) values('$party_size',
+ '$date', '$time', '$fname', '$lname', '$email', '$phone_number')";
+ if ($conn->query($sql)==True){
+     echo "Your reservation is done";
+ }
+ else {
+     echo "Error : please check your information" .$conn->error; 
+    }
+  }
 ?>
         
 
