@@ -40,3 +40,12 @@ body {
     color: white;
     font-size: 15px;
   }
+  h2, h3 {
+    color: rgb(255, 115, 0) !important;
+  }
+  #col2 {
+    background-image: url(../images/Book2.avif);
+    background-size: cover;
+    /* background-attachment:fixed; */
+    background-repeat: no-repeat;
+  }

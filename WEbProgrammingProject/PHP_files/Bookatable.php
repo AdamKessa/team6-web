@@ -74,8 +74,14 @@ include "header.php" ?>
                 }
               ?>              
               </div>
-              <div class="col" id="">
-                <img class="image" src="../images/Book2.avif" alt="Moroccan tomato salad">                
+              <div class="col" id="col2">
+                <!-- <img class="image" src="../images/Book2.avif" alt="Moroccan tomato salad">    -->
+                <h3><b>Check your reservation here</b></h3>
+                <form action="" method="post">
+                  <input class="form-control w-50"  type="text" name="checkreservation" placeholder="Your reservation code"><br>
+                  <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check">Check</button>
+                  <button type="submit" class="btn btn-primary btn-lg" value="delete your reservation" name="delete">Cancel reservation</button>
+                </form>
               </div>
               
              </div> 
