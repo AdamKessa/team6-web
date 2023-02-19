@@ -82,6 +82,22 @@ include "header.php" ?>
                   <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check">Check</button>
                   <button type="submit" class="btn btn-primary btn-lg" value="delete your reservation" name="delete">Cancel reservation</button>
                 </form>
+                <?php 
+                include 'bookatable-db.php';
+                if (isset($_POST['check'])) {
+                    $checkreservation = $_POST['checkreservation'];
+                    $sql = "SELECT * FROM reservations WHERE reservationCode = '$checkreservation'";
+                    $result=$conn->query($sql);
+                    if ($result->num_rows >= 0) {
+                      while($row=$result ->fetch_assoc()){
+                            echo "Reservation Information: <br>";
+                            echo "Name :" .$row['fname']. "<br>";
+                            echo "Reservation Code :" .$row['reservationCode']. "<br>";
+                            echo "Booking Date :" .$row['date']. "<br>";
+                            echo "Booking Time :" .$row['time']. "<br>";          
+                            
+                        }}}
+                ?>
               </div>
               
              </div> 
