@@ -10,8 +10,8 @@ include "header.php" ?>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS_files/bookatable.css">       
   </head>
-  <form action="" method="post">
-     <body>   
+          <form action="" method="post">
+            <body>   
              <div class="row">
               <h2>Book a table</h2>
              </div>
@@ -49,35 +49,35 @@ include "header.php" ?>
                     <input type="text" class="form-control w-75" placeholder="Mobile Phone" name="phonenumber" required>
                 </div> <br><br>                 
                 <button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Confirm and Book</button>
-  </form>
+          </form>
+                <?php
+              $reservationcode = substr(str_shuffle(str_repeat("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", 8)), 0, 8);
+              
+              if(isset($_POST['submit'])){
+                $party_size=$_POST['sellist1'];
+                $date=$_POST['bdate'];
+                $time=$_POST['btime'];
+                $fname=$_POST['fname'];
+                $lname=$_POST['lname'];
+                $email=$_POST['email'];
+                $phone_number=$_POST['phonenumber'];
+              include 'bookatable-db.php';
+              $sql= "insert into reservation (party_size, date, time, fname, lname, email, phone_number, reservationCode) values('$party_size',
+              '$date', '$time', '$fname', '$lname', '$email', '$phone_number', '$reservationcode')";
+              if ($conn->query($sql)==True){
+                  //  echo "Your reservation is done anf your reservation code is $reservationcode";
+                  echo "<br><br>".  " <div style ='font:25px Arial,tahoma,sans-serif;color:#F05C25';padding-left: 30px> Your reservation is done and your reservation code is $reservationcode</div>";
+              }
+              else {
+                  echo "Error : please check your information" .$conn->error; 
+                  }
+                }
+              ?>              
               </div>
               <div class="col" id="">
                 <img class="image" src="../images/Book2.avif" alt="Moroccan tomato salad">                
               </div>
-              <?php
-
-$reservationcode = substr(str_shuffle(str_repeat("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", 8)), 0, 8);
-
-if(isset($_POST['submit'])){
-  $party_size=$_POST['sellist1'];
-  $date=$_POST['bdate'];
-  $time=$_POST['btime'];
-  $fname=$_POST['fname'];
-  $lname=$_POST['lname'];
-  $email=$_POST['email'];
-  $phone_number=$_POST['phonenumber'];
-include 'bookatable-db.php';
-$sql= "insert into reservation (party_size, date, time, fname, lname, email, phone_number, reservationCode) values('$party_size',
- '$date', '$time', '$fname', '$lname', '$email', '$phone_number', '$reservationcode')";
- if ($conn->query($sql)==True){
-    //  echo "Your reservation is done anf your reservation code is $reservationcode";
-    echo "<div style ='font:25px Arial,tahoma,sans-serif;color:#F05C25';padding-left: 30px> Your reservation is done and your reservation code is $reservationcode</div>";
- }
- else {
-     echo "Error : please check your information" .$conn->error; 
-    }
-  }
-?>              
+              
              </div> 
 
         
