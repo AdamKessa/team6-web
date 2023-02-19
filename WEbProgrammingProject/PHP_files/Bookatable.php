@@ -87,7 +87,7 @@ include "header.php" ?>
                 include 'bookatable-db.php';
                 if(isset($_POST['check'])){
                 $reservation = $_POST['checkreservation'];                
-                $sql = "SELECT * FROM reservation WHERE reservationCode = '$reservation'";
+                $sql = "select * from reservation where reservationCode = '$reservation'";
                 $result = $conn->query($sql);                
                 if ($result->num_rows > 0) {                    
                     while($row = $result->fetch_assoc()) {
@@ -100,8 +100,21 @@ include "header.php" ?>
                       echo "<br>".  " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Party Size : " .$row['party_size']."</div>";
                                                                
                     }
-                }} else {
+                } else {
                     echo "0 results";
+                }}
+                ?>
+                <?php
+                if(isset($_POST['delete'])){
+                  $reservation = $_POST['checkreservation'];
+                  $sql = "DELETE from reservation where reservationCode = '$reservation'"; 
+                  $result = $conn->query($sql); 
+                  if($result) {
+                    echo " <div style ='font:20px Arial,tahoma,sans-serif;color:#FFFFFF;font-weight: bold';> Your reservation has been canceled</div>";
+                   }
+                  else {
+                    echo " <div style ='font:20px Arial,tahoma,sans-serif;color:#FFFFFF;font-weight: bold';> Please check your reservation code</div>";
+                   }
                 }
                 $conn->close();
                 ?>
