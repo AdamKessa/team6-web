@@ -11,7 +11,7 @@ include "header.php" ?>
     <link rel="stylesheet" href="../CSS_files/bookatable.css">       
   </head>
           <form action="" method="post">
-            <body>   
+            <body >   
              <div class="row">
               <h2>Book a table</h2>
              </div>
@@ -88,8 +88,7 @@ include "header.php" ?>
                 if(isset($_POST['check'])){
                 $reservation = $_POST['checkreservation'];                
                 $sql = "SELECT * FROM reservation WHERE reservationCode = '$reservation'";
-                $result = $conn->query($sql);
-                
+                $result = $conn->query($sql);                
                 if ($result->num_rows > 0) {                    
                     while($row = $result->fetch_assoc()) {
                       echo " <div style ='font:20px Arial,tahoma,sans-serif;color:#FFFFFF;font-weight: bold';> Reservation Information: <br></div>";
