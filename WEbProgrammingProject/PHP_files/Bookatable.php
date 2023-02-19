@@ -79,24 +79,32 @@ include "header.php" ?>
                 <h3><b>Check your reservation here</b></h3>
                 <form action="" method="post">
                   <input class="form-control w-50"  type="text" name="checkreservation" placeholder="Your reservation code"><br>
+                  <!-- <input class="form-control" type="text" name="email2" placeholder="Email" required><br><br> -->
                   <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check">Check</button>
                   <button type="submit" class="btn btn-primary btn-lg" value="delete your reservation" name="delete">Cancel reservation</button>
                 </form>
                 <?php 
                 include 'bookatable-db.php';
-                if (isset($_POST['check'])) {
-                    $checkreservation = $_POST['checkreservation'];
-                    $sql = "SELECT * FROM reservations WHERE reservationCode = '$checkreservation'";
-                    $result=$conn->query($sql);
-                    if ($result->num_rows >= 0) {
-                      while($row=$result ->fetch_assoc()){
-                            echo "Reservation Information: <br>";
-                            echo "Name :" .$row['fname']. "<br>";
-                            echo "Reservation Code :" .$row['reservationCode']. "<br>";
-                            echo "Booking Date :" .$row['date']. "<br>";
-                            echo "Booking Time :" .$row['time']. "<br>";          
-                            
-                        }}}
+                if(isset($_POST['check'])){
+                $reservation = $_POST['checkreservation'];                
+                $sql = "SELECT * FROM reservation WHERE reservationCode = '$reservation'";
+                $result = $conn->query($sql);
+                
+                if ($result->num_rows > 0) {                    
+                    while($row = $result->fetch_assoc()) {
+                      echo " <div style ='font:20px Arial,tahoma,sans-serif;color:#FFFFFF;font-weight: bold';> Reservation Information: <br></div>";
+                      echo "<br>".  " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Name :" .$row['lname']. "</div>";
+                      echo "<br>".  " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Family Name : " .$row['fname']."</div>";
+                      echo "<br>".  " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Reservation Code : " .$row['reservationCode']."</div>";
+                      echo "<br>".  " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Booking Date : " .$row['date']."</div>";
+                      echo "<br>".  " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Booking Time : " .$row['time']."</div>";
+                      echo "<br>".  " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Party Size : " .$row['party_size']."</div>";
+                                                               
+                    }
+                }} else {
+                    echo "0 results";
+                }
+                $conn->close();
                 ?>
               </div>
               
