@@ -14,14 +14,15 @@ include "header.php" ?>
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="../CSS_files/bookatable.css">
 </head>
-<form action="" method="post">
 
-  <body>
-    <div class="row">
-      <h2>Book a table</h2>
-    </div>
-    <div class="row">
-      <div class="col" id="booking" style="background-image: url('../images/istockphoto-1312307362-170667a.jpg')">
+
+<body>
+  <div class="">
+    <h2>Book a table</h2>
+  </div>
+  <div class="row">
+    <div class="col" id="booking" style="background-image: url('../images/istockphoto-1312307362-170667a.jpg')">
+      <form action="" method="post">
         <label for="sel1" class="form-label">Party size</label>
         <select class="form-select form-select-lg mb-5" id="sel1" name="sellist1">
           <option>1 person</option>
@@ -77,61 +78,60 @@ include "header.php" ?>
           }
         }
         ?>
-      </div>
-</form>
-  <div class="col" id="col2">
-    <!-- <img class="image" src="../images/Book2.avif" alt="Moroccan tomato salad">    -->
-    <h3><b>Check your reservation here</b></h3>
-    <form action="" method="post">
-      <input class="form-control w-50" type="text" name="checkreservation" placeholder="Your reservation code"><br>
-      <!-- <input class="form-control" type="text" name="email2" placeholder="Email" required><br><br> -->
-      <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check">Check</button>
-      <button type="submit" class="btn btn-primary btn-lg" value="delete your reservation" name="delete">Cancel
-        reservation</button>
+    </div>
     </form>
-    <?php
-    include 'bookatable-db.php';
-    if (isset($_POST['check'])) {
-      $reservation = $_POST['checkreservation'];
-      $sql = "select * from reservation where reservationCode = '$reservation'";
-      $result = $conn->query($sql);
-      if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-          echo " <div style ='font:20px Arial,tahoma,sans-serif;color:#FFFFFF;font-weight: bold';> Reservation Information: <br></div>";
-          echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Name :" . $row['lname'] . "</div>";
-          echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Family Name : " . $row['fname'] . "</div>";
-          echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Reservation Code : " . $row['reservationCode'] . "</div>";
-          echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Booking Date : " . $row['date'] . "</div>";
-          echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Booking Time : " . $row['time'] . "</div>";
-          echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Party Size : " . $row['party_size'] . "</div>";
+    <div class="col" id="col2">
+      <!-- <img class="image" src="../images/Book2.avif" alt="Moroccan tomato salad">    -->
+      <h3><b>Check your reservation here</b></h3>
+      <form action="" method="post">
+        <input class="form-control w-50" type="text" name="checkreservation" placeholder="Your reservation code"><br>
+        <!-- <input class="form-control" type="text" name="email2" placeholder="Email" required><br><br> -->
+        <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check">Check</button>
+        <button type="submit" class="btn btn-primary btn-lg" value="delete your reservation" name="delete">Cancel
+          reservation</button>
+      </form>
+      <?php
+      include 'bookatable-db.php';
+      if (isset($_POST['check'])) {
+        $reservation = $_POST['checkreservation'];
+        $sql = "select * from reservation where reservationCode = '$reservation'";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+          while ($row = $result->fetch_assoc()) {
+            echo " <div style ='font:20px Arial,tahoma,sans-serif;color:#FFFFFF;font-weight: bold';> Reservation Information: <br></div>";
+            echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Name :" . $row['lname'] . "</div>";
+            echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Family Name : " . $row['fname'] . "</div>";
+            echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Reservation Code : " . $row['reservationCode'] . "</div>";
+            echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Booking Date : " . $row['date'] . "</div>";
+            echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Booking Time : " . $row['time'] . "</div>";
+            echo "<br>" . " <div style ='font:15px Arial,tahoma,sans-serif;color:#FFFFFF';padding-left: 30px> Party Size : " . $row['party_size'] . "</div>";
 
+          }
+        } else {
+          echo "0 results";
         }
-      } else {
-        echo "0 results";
       }
-    }
-    ?>
-    <?php
-    if (isset($_POST['delete'])) {
-      $reservation = $_POST['checkreservation'];
-      $sql = "DELETE from reservation where reservationCode = '$reservation'";
-      $result = $conn->query($sql);
-      if ($result) {
-        echo " <div style ='font:20px Arial,tahoma,sans-serif;color:#FFFFFF;font-weight: bold';> Your reservation has been canceled</div>";
-      } else {
-        echo " <div style ='font:20px Arial,tahoma,sans-serif;color:#FFFFFF;font-weight: bold';> Please check your reservation code</div>";
+      ?>
+      <?php
+      if (isset($_POST['delete'])) {
+        $reservation = $_POST['checkreservation'];
+        $sql = "DELETE from reservation where reservationCode = '$reservation'";
+        $result = $conn->query($sql);
+        if ($result) {
+          echo " <div style ='font:20px Arial,tahoma,sans-serif;color:#FFFFFF;font-weight: bold';> Your reservation has been canceled</div>";
+        } else {
+          echo " <div style ='font:20px Arial,tahoma,sans-serif;color:#FFFFFF;font-weight: bold';> Please check your reservation code</div>";
+        }
       }
-    }
-    $conn->close();
-    ?>
+      $conn->close();
+      ?>
+    </div>
   </div>
 
-</div>
 
 
 
 
 
 
-
-<?php include "footer.php" ?>
+  <?php include "footer.php" ?>
