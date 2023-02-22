@@ -15,6 +15,32 @@ else{
     echo "<br>". "Not August, this is Month-name so I don't have any holidays";
 }
 ?>
+<!-- javascript-->
+<br>
+<script>
+    document.write("helloooooooooooooooooo")
+</script> 
+
+<br>
+
+<input type="button" onclick="hello()" value="Click Click c Magic">
+
+<!--
+    <button onclick="add()">
+    -->
+
+    <p id="place1" style="color:red; background-color:yellow;"> </p>
+    <p id="place2" style="color:red; background-color:blue;"></p>
+
+    <script>
+        document.getElementById("place1").innerHTML = "this wil go to place1";
+    </script>
+
+    <h2>Changing bg color</h2>
+    <form>
+        <input type="color" name="background" onchange="changeColor('background', this.value)">
+    </form>
+
 <h3>2. Assign colour red to a variable name $color and check to print one the following responses (if else statement):</h3>
 <?php
 $color = "red";
