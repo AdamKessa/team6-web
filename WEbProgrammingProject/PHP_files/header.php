@@ -214,7 +214,9 @@ hr.style1{
     <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png" >
     <link rel="stylesheet" href="style.css">
         <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png" >
-        
+        <!-- javascript-->
+    <script src="../js/site.js"> </script>
+
   </head>
  
 <div class="">
@@ -248,6 +250,9 @@ hr.style1{
                     <li class="nav-item">
                       <a class="nav-link nav-link text-light" href="Bookatable.php">RESERVATION</a>
                     </li>  
+                    <li class="nav-item">
+                      <a class="nav-link nav-link text-light" href="reportBug.php">REPORT BUG</a>
+                    </li> 
                     <li class="nav-item" id="navend">
                       <a class="nav-link nav-link text-light" href="">BLOG</a>
                     </li>
