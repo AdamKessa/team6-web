@@ -50,34 +50,88 @@ body {
     color:rgb(255, 119, 0) !important;
     text-align: center;
   }
-  a, nav a:visited, nav a:active{
-    text-decoration: none ; 
-    color: rgb(255, 255, 255);
+  /* ---mid------- */
+.mid {
+  padding-top: 100px;
+
+}
+
+
+.icon
+{
+  padding-right: 1%;
+}
+.cont>nav>ul>div
+{
+  
     font-weight: bold;
-  }
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
   a:hover {
     color: rgb(255, 138, 4);
   }
-  nav {
-    
-    /* margin-top: 10px; */
-    /* width: 85%; */
-    /* margin-left: 135px; */
-    position: fixed;
-    width: 85%;
-    font-weight: bold;
-  }
-  #navend {
-    border-right: 2px solid gray;
-    padding-right: 5px;
-  }
-  .dropdown-item {
-    font-size: 20px;
-  }
-  .navbar li{
-    margin-left:5px;
-    margin-right:5px;
-  }
+.cont>nav>ul
+{ 
+  display: flex;
+  float: right;
+  position: fixed;
+  width: 100%;
+  padding-left: 5%;
+  /* padding-left: 100%; */
+  /* padding-right: 2%; */
+  background: linear-gradient(to top, transparent, rgb(0, 0, 0)),
+  url("critters.png") ;
+
+}
+.nav-link
+{
+  margin-top: 20px;
+}
+
+nav li
+{
+   margin-top: 20px;
+}
+
+li a {
+  
+  font-weight: bold;
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  color: orange;
+}
+ul {
+  
+  list-style-type: none;
+  padding: 0; 
+  
+}
+.active {
+  font-size: 14px;
+  color: rgb(255, 123, 0);
+}
+.login{
+  width: 100px;
+}
+
+.dropdown-menu {
+  min-width:50px;
+}
+
+
   #facebook, #twitter{
     padding-left: 5px;
   }
@@ -181,6 +235,7 @@ body {
   }
   #firstcol {
     padding-top: 15px;
+    z-index: -2;
   }
   .AppStore {
     width: 100px;
@@ -191,6 +246,60 @@ body {
   .modal-body p{
     color:black !important;
   }
+
+  /* ---US---- */
+.US
+{ 
+  
+  background-color: rgb(255, 72, 0);
+  padding-left: 10%;
+
+  
+}
+.location
+{
+  display: flex;
+  float: left;
+}
+.info
+{ 
+  padding: 10%;
+  padding-bottom: 0;
+}
+.info>li
+{
+  color: white;
+  padding: 5px;
+}
+.location1
+{
+  display: flex;
+  float: left;
+}
+.info1
+{ 
+  padding: 10%;
+  padding-bottom: 0;
+}
+.info1>li
+{
+  color: white;
+  padding: 5px;
+}
+h4
+{
+  color: rgb(255, 255, 255);
+}
+.icons>div
+{   display: inline-block;
+  color: white;
+}
+
+.locationul1>ul>li
+{
+  background-color:rgb(255, 72, 0) ;
+}
+
   @media (min-width: 1200px){
   .container {
     width: 100%;
