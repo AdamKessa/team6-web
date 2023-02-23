@@ -30,13 +30,13 @@ include "layout/PHP_files/header.php" ?>
                 </div>
               <div class="col-md-3">               
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/Moroccan tomato salad - 4$.jpg" alt="Moroccan tomato salad">
+                  <img class="image2 rounded-circle" src="layout/images/Moroccan tomato salad - 4$.jpg" alt="Moroccan tomato salad">
                   <p>Garden salad </p>
                   <h2> $4 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/Moroccan tomato salad - 4$.jpg" alt="Moroccan tomato salad" width="100px">  
+                      <img src="layout/images/Moroccan tomato salad - 4$.jpg" alt="Moroccan tomato salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Moroccan tomato salad</h4>
@@ -52,13 +52,13 @@ include "layout/PHP_files/header.php" ?>
                 </div>
 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/Garden salad - 3$.jpg" alt="Garden salad">
+                  <img class="image2 rounded-circle" src="layout/images/Garden salad - 3$.jpg" alt="Garden salad">
                   <p>Garden salad </p>
                   <h2> $3 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/Garden salad - 3$.jpg" alt="Garden salad" width="100px">  
+                      <img src="layout/images/Garden salad - 3$.jpg" alt="Garden salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Garden salad</h4>
@@ -76,13 +76,13 @@ include "layout/PHP_files/header.php" ?>
 
               <div class="col-md-3">                
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/Caesar salad - 6$.jpg" alt="Caesar salad">
+                  <img class="image2 rounded-circle" src="layout/images/Caesar salad - 6$.jpg" alt="Caesar salad">
                   <p>Garden salad </p>
                   <h2> $3 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/Caesar salad - 6$.jpg" alt="Caesar salad" width="100px">  
+                      <img src="layout/images/Caesar salad - 6$.jpg" alt="Caesar salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Caesar salad</h4>
@@ -98,13 +98,13 @@ include "layout/PHP_files/header.php" ?>
                 </div>
 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/Spicy Squid Salad2 6$.jpg" alt="Spicy Squid Salad">
+                  <img class="image2 rounded-circle" src="layout/images/Spicy Squid Salad2 6$.jpg" alt="Spicy Squid Salad">
                   <p>Spicy Squid salad</p>
                   <h2> $6 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/Spicy Squid Salad2 6$.jpg" alt="Spicy Squid Salad" width="100px">  
+                      <img src="layout/images/Spicy Squid Salad2 6$.jpg" alt="Spicy Squid Salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Spicy Squid Salad</h4>
@@ -122,13 +122,13 @@ include "layout/PHP_files/header.php" ?>
               
               <div class="col-md-3"> 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/shanghai salad.jpg" alt="shanghai salad">
+                  <img class="image2 rounded-circle" src="layout/images/shanghai salad.jpg" alt="shanghai salad">
                   <p>shanghai salad</p>
                   <h2> $5 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/shanghai salad.jpg" alt="shanghai salad" width="100px">  
+                      <img src="layout/images/shanghai salad.jpg" alt="shanghai salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">shanghai salad</h4>
@@ -146,13 +146,13 @@ include "layout/PHP_files/header.php" ?>
                 
 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/cobb salad 3$.jpg" alt="cobb salad">
+                  <img class="image2 rounded-circle" src="layout/images/cobb salad 3$.jpg" alt="cobb salad">
                   <p>cobb salad</p>
                   <h2> $6 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/cobb salad 3$.jpg" alt="cobb salad" width="100px">  
+                      <img src="layout/images/cobb salad 3$.jpg" alt="cobb salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">cobb salad</h4>
@@ -182,8 +182,8 @@ include "layout/PHP_files/header.php" ?>
               </div>
               <div>
                 <h4><b>Order anywhere, anytime! download our App</h4> 
-                <a href=""><img class="AppStore" src="../images/App Store Badge.png" alt="App Store" width="15px"></a> 
-                <a href=""><img class="AppStore" src="../images/Google Play Store Badge.png" alt="Google Play Store" width="15px"></a> 
+                <a href=""><img class="AppStore" src="layout/images/App Store Badge.png" alt="App Store" width="15px"></a> 
+                <a href=""><img class="AppStore" src="layout/images/Google Play Store Badge.png" alt="Google Play Store" width="15px"></a> 
               </div>              
             </div>
             <div class="container">
@@ -197,15 +197,15 @@ include "layout/PHP_files/header.php" ?>
                     </ol>
                     <div class="carousel-inner">
                       <div class="item active carousel-image">
-                        <img src="../images/salad5.jpg" alt="Los Angeles" style="width:100%;">
+                        <img src="layout/images/salad5.jpg" alt="Los Angeles" style="width:100%;">
                       </div>
                 
                       <div class="item carousel-image">
-                        <img src="../images/salad6.jpg" alt="Chicago" style="width:100%;">
+                        <img src="layout/images/salad6.jpg" alt="Chicago" style="width:100%;">
                       </div>
                     
                       <div class="item carousel-image">
-                        <img src="../images/salad7.jpg" alt="New york" style="width:100%;">
+                        <img src="layout/images/salad7.jpg" alt="New york" style="width:100%;">
                       </div>
                     </div>            
                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
