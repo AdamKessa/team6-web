@@ -256,6 +256,7 @@ hr.style1{
 }
 #firstcol {
   padding-top: 15px;
+  z-index: -2;
 }
 
 .imagehover2 row mt-5{

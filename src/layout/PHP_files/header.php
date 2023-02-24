@@ -54,7 +54,7 @@
                           <div class="dropdown-menu">
                               <a href="index-food.php" class="dropdown-item text-white bg-dark">FOOD</a>
                               <a href="index-salad.php" class="dropdown-item text-white bg-dark">SALAD</a>
-                              <a href="index-drinks.php" class="dropdown-item text-white bg-dark">DRINK</a>
+                              <a href="index-drink.php" class="dropdown-item text-white bg-dark">DRINK</a>
                           </div>
                       </div>
                        </div>
