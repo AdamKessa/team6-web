@@ -32,7 +32,7 @@ include "header.php" ?>
 				<label style="color : white;" for="message">Message:</label>
 				<textarea class="form-control" id="message" name="message"></textarea>
 			</div>
-			<button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+			<button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Submit</button>
 
 			<?php
 
@@ -41,16 +41,29 @@ include "header.php" ?>
           $email = $_POST['email'];
           $message = $_POST['message'];
 
-          include 'reportBug-db';
-          $sql = "insert into reportBug (name, email, message) values('$name',
+          include 'reportBug-db.php';
+          $sql1 = "insert into reportBug (name, email, message) values('$name',
               '$email', '$message')";
-          if ($conn->query($sql) == True) {
-            //  echo "Your reservation is done and your reservation code is $reservationcode";
+			$sql2 = "SELECT message_id FROM reportBug ORDER BY message_id DESC LIMIT 1";
+			$result2 = mysqli_query($conn, $sql2);
+
+          if ($conn->query($sql1) == True) {
             echo "<br><br>" . " <div style ='font:25px Arial,tahoma,sans-serif;color:#F05C25';padding-left: 30px> Your bug report was successfully received</div>";
           } else {
             echo "Error : please check your information" . $conn->error;
           }
+
+		  if (mysqli_num_rows($result2) > 0) {
+			// Loop through the results and output  data
+			while($row = mysqli_fetch_assoc($result2)) {
+				echo "<h3 style= 'color:#FFFFFF' > The ID of your report is {$row['message_id']} . </h3>";
+		  
         }
+	}
+}
+
+		
+			
         ?>
 
 		</form>
