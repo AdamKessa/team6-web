@@ -1,10 +1,11 @@
 <?php
 $title = "drinkmenu";
+$css = "layout/CSS_files/style.css";
 include "layout/PHP_files/header.php" ?>
 
 
     
-        <div class="">
+        <div class="mid">
        
              <div class="row">
               <div class="col-md-4" id="firstcol">
@@ -25,13 +26,13 @@ include "layout/PHP_files/header.php" ?>
                 </div>
               <div class="col-md-3">               
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/uzb_tea.jpg" alt="Moroccan tomato salad">
+                  <img class="image2 rounded-circle" src="layout/images/uzb_tea.jpg" alt="Moroccan tomato salad">
                   <p>Uzbek tea</p>
                   <h2> $6 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/uzb_tea.jpg" alt="Moroccan tomato salad" width="100px">  
+                      <img src="layout./images/uzb_tea.jpg" alt="Moroccan tomato salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Uzbek tea</h4>
@@ -47,13 +48,13 @@ include "layout/PHP_files/header.php" ?>
                 </div>
 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/peache.jpg" alt="Garden salad">
+                  <img class="image2 rounded-circle" src="layout/images/peache.jpg" alt="Garden salad">
                   <p>Peach juice </p>
                   <h2> $6 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/peache.jpg" alt="Garden salad" width="100px">  
+                      <img src="layout/images/peache.jpg" alt="Garden salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Peach juice</h4>
@@ -71,13 +72,13 @@ include "layout/PHP_files/header.php" ?>
 
               <div class="col-md-3">                
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/kiwiberry.jpg" alt="Caesar salad">
+                  <img class="image2 rounded-circle" src="layout/images/kiwiberry.jpg" alt="Caesar salad">
                   <p> Kiwi Berry</p>
                   <h2> $6 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/kiwiberry.jpg" alt="Caesar salad" width="100px">  
+                      <img src="layout/images/kiwiberry.jpg" alt="Caesar salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Kiwi Berry</h4>
@@ -93,13 +94,13 @@ include "layout/PHP_files/header.php" ?>
                 </div>
 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/tomatoe.jpeg" alt="Spicy Squid Salad">
+                  <img class="image2 rounded-circle" src="layout/images/tomatoe.jpeg" alt="Spicy Squid Salad">
                   <p>Tomato juice</p>
                   <h2> $6 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/tomatoe.jpeg" alt="Spicy Squid Salad" width="100px">  
+                      <img src="layout/images/tomatoe.jpeg" alt="Spicy Squid Salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Tomato juice</h4>
@@ -117,13 +118,13 @@ include "layout/PHP_files/header.php" ?>
               
               <div class="col-md-3"> 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/orange.jpg" alt="shanghai salad">
+                  <img class="image2 rounded-circle" src="layout/images/orange.jpg" alt="shanghai salad">
                   <p>Orange juice</p>
                   <h2> $4 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/orange.jpg" alt="shanghai salad" width="100px">  
+                      <img src="layout/images/orange.jpg" alt="shanghai salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">orange Juice</h4>
@@ -141,13 +142,13 @@ include "layout/PHP_files/header.php" ?>
                 
 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/apple.jpg" alt="cobb salad">
+                  <img class="image2 rounded-circle" src="layout/images/apple.jpg" alt="cobb salad">
                   <p>Apple juice</p>
                   <h2> $6 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/apple.jpg" alt="cobb salad" width="100px">  
+                      <img src="layout/images/apple.jpg" alt="cobb salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start"> Apple juice</h4>
@@ -177,8 +178,8 @@ include "layout/PHP_files/header.php" ?>
               </div>
               <div>
                 <h4><b>Order anywhere, anytime! download our App</h4> 
-                <a href=""><img class="AppStore" src="../images/App Store Badge.png" alt="App Store" width="15px"></a> 
-                <a href=""><img class="AppStore" src="../images/Google Play Store Badge.png" alt="Google Play Store" width="15px"></a> 
+                <a href=""><img class="AppStore" src="layout/images/App Store Badge.png" alt="App Store" width="15px"></a> 
+                <a href=""><img class="AppStore" src="layout/images/Google Play Store Badge.png" alt="Google Play Store" width="15px"></a> 
               </div>              
             </div>
             <div class="container">
@@ -193,15 +194,15 @@ include "layout/PHP_files/header.php" ?>
                     </ol>
                     <div class="carousel-inner">
                       <div class="item active carousel-image">
-                        <img src="../images/strawberry_cocktail.jpg" alt="Los Angeles" style="width:100%;">
+                        <img src="layout/images/strawberry_cocktail.jpg" alt="Los Angeles" style="width:100%;">
                       </div>
                 
                       <div class="item carousel-image">
-                        <img src="../images/sumalyak.jpg" alt="Chicago" style="width:100%;">
+                        <img src="layout/images/sumalyak.jpg" alt="Chicago" style="width:100%;">
                       </div>
                     
                       <div class="item carousel-image">
-                        <img src="../images/strawbery.jpg" alt="New york" style="width:100%;">
+                        <img src="layout/images/strawbery.jpg" alt="New york" style="width:100%;">
                       </div>
                     </div>            
                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -219,4 +220,4 @@ include "layout/PHP_files/header.php" ?>
             
         </div>           
              
-            <?php include "footer.php" ?>
+        <?php include "layout/PHP_files/footer.php" ?>

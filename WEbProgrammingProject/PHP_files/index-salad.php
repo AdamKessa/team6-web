@@ -55,7 +55,7 @@ include "header.php" ?>
               <div class="col-md-3">               
                 <div class="imagehover2 row mt-5">
                   <img class="image2 rounded-circle" src="../images/Moroccan tomato salad - 4$.jpg" alt="Moroccan tomato salad">
-                  <p>Garden salad </p>
+                  <p>Moroccan tomato salad </p>
                   <h2> $4 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
@@ -101,7 +101,7 @@ include "header.php" ?>
               <div class="col-md-3">                
                 <div class="imagehover2 row mt-5">
                   <img class="image2 rounded-circle" src="../images/Caesar salad - 6$.jpg" alt="Caesar salad">
-                  <p>Garden salad </p>
+                  <p>Caesar salad </p>
                   <h2> $3 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
