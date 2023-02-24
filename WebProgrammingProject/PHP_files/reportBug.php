@@ -19,7 +19,7 @@ include "header.php" ?>
 <body>
 	<div class="container">
 		<h1>Describe the bug you encountered</h1>
-		<form action="submit.php" method="post">
+		<form action="" method="post">
 			<div class="form-group">
 				<label style="color : white;" for="name">Name:</label>
 				<input type="text" class="form-control" id="name" name="name">
@@ -32,7 +32,27 @@ include "header.php" ?>
 				<label style="color : white;" for="message">Message:</label>
 				<textarea class="form-control" id="message" name="message"></textarea>
 			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
+			<button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+
+			<?php
+
+        if (isset($_POST['submit'])) {
+          $name = $_POST['name'];
+          $email = $_POST['email'];
+          $message = $_POST['message'];
+
+          include 'reportBug-db';
+          $sql = "insert into reportBug (name, email, message) values('$name',
+              '$email', '$message')";
+          if ($conn->query($sql) == True) {
+            //  echo "Your reservation is done and your reservation code is $reservationcode";
+            echo "<br><br>" . " <div style ='font:25px Arial,tahoma,sans-serif;color:#F05C25';padding-left: 30px> Your bug report was successfully received</div>";
+          } else {
+            echo "Error : please check your information" . $conn->error;
+          }
+        }
+        ?>
+
 		</form>
 	</div>
 
