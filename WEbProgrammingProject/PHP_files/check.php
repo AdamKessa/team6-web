@@ -16,6 +16,6 @@ VALUES('$login','$pass','$name')");
 
 $mysql->close();
 
-header("Location : home.php");
+header("Location: index.php");
 // exit();
 ?>

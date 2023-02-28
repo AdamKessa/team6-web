@@ -2,7 +2,7 @@
 $title = "Login";
 include "header.php" ?>
   <?php
-  if(!$_COOKIE['user']==''):
+  if(isset($_COOKIE['user']) == false):
   ?>
 <form action="auth.php" method="post" onsubmit="return crud()" name="form2">
 

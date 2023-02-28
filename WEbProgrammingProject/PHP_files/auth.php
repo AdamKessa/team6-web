@@ -18,7 +18,7 @@ if(is_countable($user)==0)
 
 $mysql->close();
 
-header("Location : home.php");
+header("Location: index.php");
 // exit();
 ?>
 

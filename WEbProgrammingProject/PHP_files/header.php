@@ -297,6 +297,12 @@
             <li class="nav-item">
               <a class="nav-link nav-link text-light" href="Bookatable.php">RESERVATION</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link text-light" href="login.php">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link text-light" href="register.php">Sign up</a>
+            </li>
             <li class="nav-item" id="navend">
               <a class="nav-link nav-link text-light" href="">BLOG</a>
             </li>

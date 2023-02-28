@@ -2,7 +2,7 @@
 $title = "Sign up";
 include "header.php" ?>
   <?php
-  if($_COOKIE['user']==''):
+  if(isset($_COOKIE['user']) == false):
   ?>
 <form action="check.php" method="post" onsubmit="return crud()" name="form2">    
 
@@ -19,6 +19,7 @@ type="submit">Register</button>
 
 
 </form>
+p>Wellcome <?=$_COOKIE['user']?>. Press <a href="exit.php">log out</a> to exit. </p>
 <?php endif;?>
 
 </body>
