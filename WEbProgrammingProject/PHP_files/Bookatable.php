@@ -22,7 +22,7 @@ include "header.php" ?>
   </div>
   <div class="row">
     <div class="col" id="booking" style="background-image: url('../images/istockphoto-1312307362-170667a.jpg')">
-      <form action="" method="post">
+      <form action="" method="post" name="myform">
         <label for="sel1" class="form-label">Party size</label>
         <select class="form-select form-select-lg mb-5" id="sel1" name="sellist1">
           <option>1 person</option>
@@ -41,18 +41,18 @@ include "header.php" ?>
           </div>
         </div><br><br>
         <div class="col-xs-6">
-          <input class="form-control" type="text" form-select-lg name="fname" placeholder="Fisrt Name" required onblur="fname()">
+          <input class="form-control" type="text" form-select-lg name="fname" placeholder="Fisrt Name" required onblur="Book()">
         </div>
         <div class="col-xs-6">
-          <input class="form-control " type="text" form-select-lg name="lname" placeholder="Last Name" required onblur="lname()"><br><br>
+          <input class="form-control " type="text" form-select-lg name="lname" placeholder="Last Name" required onblur="Book()"><br><br>
         </div>
-        <input class="form-control" type="text" name="email" placeholder="Email" required onblur="email()><br><br>
+        <input class="form-control" type="text" name="email" placeholder="Email" required onblur="Book()><br><br>
         <div class="row" id="tel">
           <div class="input-group-prepend w-auto">
             <!-- <span class="input-group-text input-sm bg-secondary"><b>+358</b></span> -->
             <button type="button" class="btn btn-primary "><b>+358</b></button>
           </div>
-          <input type="text" class="form-control w-75" placeholder="Mobile Phone" name="phonenumber" required onblur="phonenumber()>
+          <input type="text" class="form-control w-75" placeholder="Mobile Phone" name="phonenumber" required onblur="Book()>
         </div> <br><br>
         <button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Confirm and Book</button>
 
