@@ -41,18 +41,18 @@ include "header.php" ?>
           </div>
         </div><br><br>
         <div class="col-xs-6">
-          <input class="form-control" type="text" form-select-lg name="fname" placeholder="Fisrt Name" required>
+          <input class="form-control" type="text" form-select-lg name="fname" placeholder="Fisrt Name" required onblur="fname()">
         </div>
         <div class="col-xs-6">
-          <input class="form-control " type="text" form-select-lg name="lname" placeholder="Last Name" required><br><br>
+          <input class="form-control " type="text" form-select-lg name="lname" placeholder="Last Name" required onblur="lname()"><br><br>
         </div>
-        <input class="form-control" type="text" name="email" placeholder="Email" required><br><br>
+        <input class="form-control" type="text" name="email" placeholder="Email" required onblur="email()><br><br>
         <div class="row" id="tel">
           <div class="input-group-prepend w-auto">
             <!-- <span class="input-group-text input-sm bg-secondary"><b>+358</b></span> -->
             <button type="button" class="btn btn-primary "><b>+358</b></button>
           </div>
-          <input type="text" class="form-control w-75" placeholder="Mobile Phone" name="phonenumber" required>
+          <input type="text" class="form-control w-75" placeholder="Mobile Phone" name="phonenumber" required onblur="phonenumber()>
         </div> <br><br>
         <button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Confirm and Book</button>
 
@@ -127,6 +127,7 @@ include "header.php" ?>
       ?>
     </div>
   </div>
+</body>
 
 
 
