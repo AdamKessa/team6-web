@@ -51,9 +51,17 @@
   }     
     //validating email 
   function Bookemail(){ 
-    let email=document.myform.email.value;
-    if (email==null || email==""){  
+    let emaill=document.myform.email.value;
+    if (emaill==null || emaill==""){  
         alert("Email can't be blank");  
         return false;  
-      }    
+      }
+      let pattern = /@/;
+      let eemail=document.myform.email.value;
+      let result = pattern.test(eemail);
+      // document.write(result);
+      if (result==false) {
+        alert("Email must cintain @");
+      }   
     }
+    
