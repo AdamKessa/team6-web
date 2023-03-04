@@ -83,8 +83,8 @@ include "header.php" ?>
     <div class="col" id="col2">
       <!-- <img class="image" src="../images/Book2.avif" alt="Moroccan tomato salad">    -->
       <h3><b>Check your reservation here</b></h3>
-      <form action="" method="post" name="myform"  onsubmit="return crud()">
-        <input class="form-control w-50" type="text" name="checkreservation" placeholder="Your reservation code" onblur="Checkreserv()"><br>
+      <form action="" method="post" name="myform2"  onsubmit="return crud2()">
+        <input class="form-control w-50" type="text" name="checkreservation" placeholder="Your reservation code"><br>
         <!-- <input class="form-control" type="text" name="email2" placeholder="Email" required><br><br> -->
         <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check">Check</button>
         <button type="submit" class="btn btn-primary btn-lg" value="delete your reservation" name="delete">Cancel
