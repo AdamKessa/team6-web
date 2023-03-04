@@ -54,7 +54,7 @@ include "header.php" ?>
           </div>
           <input type="text" class="form-control w-75" placeholder="Mobile Phone" name="phonenumber" required onblur="Bookphone()">
         </div> <br><br>
-        <button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Confirm and Book</button>
+        <button type="submit" class="btn btn-primary btn-lg" id="mo" onmouseover="onm()"  onmouseout="ono()" value="Submit" name="submit">Confirm and Book</button>
 
         <?php
         $reservationcode = substr(str_shuffle(str_repeat("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", 8)), 0, 8);
@@ -86,8 +86,8 @@ include "header.php" ?>
       <form action="" method="post" name="myform2"  onsubmit="return crud2()">
         <input class="form-control w-50" type="text" name="checkreservation" placeholder="Your reservation code"><br>
         <!-- <input class="form-control" type="text" name="email2" placeholder="Email" required><br><br> -->
-        <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check">Check</button>
-        <button type="submit" class="btn btn-primary btn-lg" value="delete your reservation" name="delete">Cancel
+        <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check" id="mo2" onmouseover="onm2()"  onmouseout="ono2()" >Check</button>
+        <button type="submit" class="btn btn-primary btn-lg" value="delete your reservation" name="delete" id="mo3" onmouseover="onm3()"  onmouseout="ono3()" >Cancel
           reservation</button>
       </form>
       <?php

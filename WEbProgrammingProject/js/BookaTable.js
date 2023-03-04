@@ -83,3 +83,31 @@
       }   
     }
     
+      // on mouse over 
+    function onm(){
+      // document.getElementById('mo').style.color = 'blue'; 
+      // document.getElementById('mo').style.fontStyle = 'italic';
+      // document.getElementById('mo').style.backgroundColor  = 'yellow';
+      document.getElementById('mo').style.fontSize = '20px';
+    }
+      // on mouse over 
+      function onm2(){
+        document.getElementById('mo2').style.fontSize = '20px';
+      }
+      function onm3(){
+        document.getElementById('mo3').style.fontSize = '20px';
+      }
+
+    //on mouse out 
+    function ono(){
+      // document.getElementById('mo').style.color = 'red'; 
+      // document.getElementById('mo').style.fontStyle = 'normal';
+      document.getElementById('mo').style.fontSize = '18px';
+      // document.getElementById('mo').style.backgroundColor  = 'white';
+    }
+    function ono2(){
+      document.getElementById('mo2').style.fontSize = '18px';
+    }
+    function ono3(){
+      document.getElementById('mo3').style.fontSize = '18px';
+    }
