@@ -8,12 +8,12 @@
     }
       // to check if name has atleast 5 characters
       else if(name.length<5){  
-        alert("Name can't less than 5 characters");  
+        alert("Name can't be less than 5 characters");  
         return false;  
       }
     // // to ensure name cannot be more than 15 characters
     else if(name.length>15){  
-        alert("Name can't more than 15 characters");  
+        alert("Name can't be more than 15 characters");  
         return false;  
       } 
 
@@ -25,12 +25,12 @@
     }
       // to check if name has atleast 5 characters
       else if(llname.length<5){  
-        alert("Last name can't less than 5 characters");  
+        alert("Last name can't be less than 5 characters");  
         return false;  
       }
     // // to ensure name cannot be more than 15 characters
     else if(llname.length>15){  
-        alert("Last name can't more than 15 characters");  
+        alert("Last name can't be more than 15 characters");  
         return false;  
       }
     //validating phonenumber 
@@ -40,14 +40,29 @@
       return false;  
     }
     else if(Phone.length<9){  
-      alert("Phonenumber can't less than 9 digits");  
+      alert("Phonenumber can't be less than 9 digits");  
       return false;  
     }
   // // to ensure name cannot be more than 9 characters
   else if(Phone.length>9){  
-      alert("Phonenumber can't more than 9 digits");  
+      alert("Phonenumber can't be more than 9 digits");  
       return false;  
     }
+     //validating reservation number 
+     let reserv=document.myform.checkreservation.value;
+     if (reserv==null || reserv==""){  
+         alert("Reservation can't be blank");  
+         return false;  
+       }  
+     else if(reserv.length<8){  
+         alert("Reservation code can't be less than 8 digits");  
+         return false;  
+       }
+     // // to ensure name cannot be more than 9 characters
+     else if(reserv.length>8){  
+         alert("Reservation code can't be more than 8 digits");  
+         return false;  
+       } 
   }     
     //validating email 
   function Bookemail(){ 
@@ -64,4 +79,6 @@
         alert("Email must contain @");
       }   
     }
+        
+    
     
