@@ -11,7 +11,7 @@
         alert("Name can't less than 5 characters");  
         return false;  
       }
-    // // to ensure name cannot be more than 5 characters
+    // // to ensure name cannot be more than 15 characters
     else if(name.length>15){  
         alert("Name can't more than 15 characters");  
         return false;  
@@ -28,7 +28,7 @@
         alert("Last name can't less than 5 characters");  
         return false;  
       }
-    // // to ensure name cannot be more than 5 characters
+    // // to ensure name cannot be more than 15 characters
     else if(llname.length>15){  
         alert("Last name can't more than 15 characters");  
         return false;  
@@ -43,7 +43,7 @@
       alert("Phonenumber can't less than 9 digits");  
       return false;  
     }
-  // // to ensure name cannot be more than 5 characters
+  // // to ensure name cannot be more than 9 characters
   else if(Phone.length>9){  
       alert("Phonenumber can't more than 9 digits");  
       return false;  
