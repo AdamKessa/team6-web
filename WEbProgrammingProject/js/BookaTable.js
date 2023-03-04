@@ -61,7 +61,7 @@
       let result = pattern.test(eemail);
       // document.write(result);
       if (result==false) {
-        alert("Email must cintain @");
+        alert("Email must contain @");
       }   
     }
     
