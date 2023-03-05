@@ -22,7 +22,7 @@ include "header.php" ?>
   </div>
   <div class="row">
     <div class="col" id="booking" style="background-image: url('../images/istockphoto-1312307362-170667a.jpg')">
-      <form action="" method="post">
+      <form action="" method="post" name="myform" onsubmit="return crud()">
         <label for="sel1" class="form-label">Party size</label>
         <select class="form-select form-select-lg mb-5" id="sel1" name="sellist1">
           <option>1 person</option>
@@ -41,20 +41,20 @@ include "header.php" ?>
           </div>
         </div><br><br>
         <div class="col-xs-6">
-          <input class="form-control" type="text" form-select-lg name="fname" placeholder="Fisrt Name" required>
+          <input class="form-control" type="text" form-select-lg name="fname" placeholder="Fisrt Name" required onblur="Bookname()">
         </div>
         <div class="col-xs-6">
-          <input class="form-control " type="text" form-select-lg name="lname" placeholder="Last Name" required><br><br>
+          <input class="form-control " type="text" form-select-lg name="lname" placeholder="Last Name" required onblur="Bookfname()"><br><br>
         </div>
-        <input class="form-control" type="text" name="email" placeholder="Email" required><br><br>
+        <input class="form-control" type="text" name="email" placeholder="Email" required onblur="Bookemail()"><br><br>
         <div class="row" id="tel">
           <div class="input-group-prepend w-auto">
             <!-- <span class="input-group-text input-sm bg-secondary"><b>+358</b></span> -->
             <button type="button" class="btn btn-primary "><b>+358</b></button>
           </div>
-          <input type="text" class="form-control w-75" placeholder="Mobile Phone" name="phonenumber" required>
+          <input type="text" class="form-control w-75" placeholder="Mobile Phone" name="phonenumber" required onblur="Bookphone()">
         </div> <br><br>
-        <button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Confirm and Book</button>
+        <button type="submit" class="btn btn-primary btn-lg" id="mo" onmouseover="onm()"  onmouseout="ono()" value="Submit" name="submit">Confirm and Book</button>
 
         <?php
         $reservationcode = substr(str_shuffle(str_repeat("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", 8)), 0, 8);
@@ -83,11 +83,11 @@ include "header.php" ?>
     <div class="col" id="col2">
       <!-- <img class="image" src="../images/Book2.avif" alt="Moroccan tomato salad">    -->
       <h3><b>Check your reservation here</b></h3>
-      <form action="" method="post">
+      <form action="" method="post" name="myform2"  onsubmit="return crud2()">
         <input class="form-control w-50" type="text" name="checkreservation" placeholder="Your reservation code"><br>
         <!-- <input class="form-control" type="text" name="email2" placeholder="Email" required><br><br> -->
-        <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check">Check</button>
-        <button type="submit" class="btn btn-primary btn-lg" value="delete your reservation" name="delete">Cancel
+        <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check" id="mo2" onmouseover="onm2()"  onmouseout="ono2()" >Check</button>
+        <button type="submit" class="btn btn-primary btn-lg" value="delete your reservation" name="delete" id="mo3" onmouseover="onm3()"  onmouseout="ono3()" >Cancel
           reservation</button>
       </form>
       <?php
@@ -127,6 +127,7 @@ include "header.php" ?>
       ?>
     </div>
   </div>
+</body>
 
 
 
