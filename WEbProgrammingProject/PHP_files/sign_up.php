@@ -1,13 +1,15 @@
 <?php 
 $title = "Sign up";
 include "header.php";?>
-
+<?php
+if(isset($_SESSION['user'])==''):
+?>
 <div class="log_sign">
 
     <form action="registration.php" onsubmit="return crud_sign()" name="form2" method="post">
     
         <label for="Email1">Email</label>
-        <input type="text" class="form-control" name="email" id="email" placeholder="Enter Email" required><br>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required><br>
         
         <label for="Name">Name</label>
         <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name" required><br>
@@ -22,5 +24,7 @@ include "header.php";?>
     
     </form>
 </div>
-
+<?php else:?>
+<p>Wellcome <?=$_SESSION['user']['nick']?>. Press <a href="exit.php">log out</a> to exit. </p>
+<?php endif;?>
 <?php include "footer.php" ?>

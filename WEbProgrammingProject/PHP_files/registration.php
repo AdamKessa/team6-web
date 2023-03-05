@@ -11,10 +11,10 @@ if(mysqli_num_rows($query)==0)
     $_SESSION['user']=['nick'=>$name];
     mysqli_query($db,"INSERT INTO `users` (`email`, `password`, `name`)
     VALUES('$email','$md5_password','$name')");
-    header("Location: user.php");
+    header("Location: login.php");
 }
 else
 {
-   echo "This Login is taken by another user.";
+   echo "This Email is taken by another user.";
 }
 ?>

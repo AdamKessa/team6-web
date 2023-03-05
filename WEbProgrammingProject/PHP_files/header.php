@@ -249,7 +249,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png">
   <link rel="stylesheet" href="../CSS_files/style.css">
-
+  <link rel="stylesheet" href="../CSS_files/registr.css">
   <link rel="stylesheet" href="../CSS_files/register.css">
   <script src="../js/register.js"></script>
   <script src="../js/BookaTable.js"></script>
