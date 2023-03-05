@@ -5,7 +5,7 @@ include "header.php";?>
 
 <div class="log_sign">
 
-    <form action="auth.php" onsubmit="return crud()" name="form2" method="post">
+    <form action="auth.php" onsubmit="return crud_sign()" name="form2" method="post">
     
         <label for="Email1">Email</label>
         <input type="text" class="form-control" name="email" id="email" placeholder="Enter Email" required><br>
