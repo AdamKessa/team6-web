@@ -181,7 +181,7 @@ include "layout/PHP_files/header.php" ?>
               <div>
                 <h4><b>Order anywhere, anytime! download our App</h4> 
                 <a href=""><img class="AppStore" src="layout/images/App Store Badge.png" alt="App Store" width="15px"></a> 
-                <a href=""><img class="AppStore" src="layout/images/Google Play Store Badge.png" alt="Google Play Store" width="15px"></a> 
+                <a href=""><img class="googleStore" src="layout/images/Google Play Store Badge.png" alt="Google Play Store" width="15px"></a> 
               </div>           
             </div>
             <div class="container">
