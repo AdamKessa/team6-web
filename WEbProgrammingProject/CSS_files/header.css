@@ -59,7 +59,7 @@ body {
   }
 
   a:hover {
-    color: rgb(255, 138, 4);
+    color: rgb(255, 138, 4) !important;
   }
 
   nav {

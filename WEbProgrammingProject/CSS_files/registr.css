@@ -8,8 +8,10 @@
 
 .well
 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   width: 80%;
-  padding-left: auto;
   background-color: black !important;
     padding-left:10% ;
 }
