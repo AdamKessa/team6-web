@@ -1,8 +1,8 @@
 <?php
 $title = "REVIEWS";
-$css = "layout/CSS_files/review.css";
+$css = "../CSS_files/review.css";
 
-include "layout/PHP_files/header.php" ?>
+include "../PHP_files/header.php" ?>
 
 
 
@@ -39,7 +39,7 @@ include "layout/PHP_files/header.php" ?>
 		<?php
 			// Connect to the database
 			
-			include 'crud/db.php';
+			include '../crud/db.php';
 			// Retrieve reviews data
 			$sql = 'SELECT * FROM reviews';
 			$result = mysqli_query($conn, $sql);

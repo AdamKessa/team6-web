@@ -1,6 +1,4 @@
-<style>
 
-</style>
 <!doctype html>
 <html lang="en">
 
@@ -21,12 +19,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png">
+  <link rel="stylesheet" href="../layout/CSS_files/style.css">
+  <link rel="stylesheet" href="../layout/CSS_files/registr.css">
+  <link rel="stylesheet" href="../layout/CSS_files/register.css">
+  <script src="../layout/js/register.js"></script>
+  <script src="../layout/js/BookaTable.js"></script>
   <link rel="stylesheet" href="../CSS_files/style.css">
-  <link rel="stylesheet" href="../CSS_files/registr.css">
-  <link rel="stylesheet" href="../CSS_files/register.css">
-  <script src="../js/register.js"></script>
-  <script src="../js/BookaTable.js"></script>
-  <link rel="stylesheet" href="../CSS_files/header.css">
+  <link rel="stylesheet" href="../CSS_files/review.css">
 
 
   <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png">
@@ -72,9 +71,12 @@
             <li class="nav-item">
               <a class="nav-link nav-link text-light" href="Bookatable.php">RESERVATION</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link text-light" href="review.php">REVIEW</a>
+            </li>
             <?php
-if(isset($_SESSION['user'])==''):
-?>
+          if(isset($_SESSION['user'])==''):
+          ?>
             <li class="nav-item">
               <a class="nav-link nav-link text-light" href="login.php">Login</a>
             </li>
@@ -82,10 +84,10 @@ if(isset($_SESSION['user'])==''):
               <li class="nav-item">
               <a class="nav-link nav-link text-light" href="login.php">Log out</a>
             </li>
-<?php endif;?>
-            <li class="nav-item" id="navend">
+            <?php endif;?>
+            <!-- <li class="nav-item" id="navend">
               <a class="nav-link nav-link text-light" href="">BLOG</a>
-            </li>
+            </li> -->
             <li class="nav-item" id="facebook">
               <a class="nav-link nav-link text-light" href="#"><i class="bi bi-facebook"></i></i></a>
             </li>
