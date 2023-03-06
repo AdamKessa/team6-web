@@ -56,7 +56,7 @@
 
 
 
-		include 'db.php';
+		include '../crud/db.php';
 
 		// insert the review into the database
 		$sql = "INSERT INTO reviews (customerName, rating, review_text, review_image) VALUES ('$name', '$rating', '$review' ,'$target_file')";
@@ -83,7 +83,7 @@
 <html>
 <head>
 	<title>go back</title>
-	<meta http-equiv="refresh" content="2;url=../review.php">
+	<meta http-equiv="refresh" content="2;url=review.php">
 </head>
 <body>
 	<h1>Go back to the review in 3 seconds...</h1>

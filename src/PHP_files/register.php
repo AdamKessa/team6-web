@@ -1,6 +1,12 @@
 <?php 
 $title = "Sign up";
 include "header.php" ?>
+
+<head>
+
+  <link rel="stylesheet" href="../layout/CSS_files/registr.css">
+</head>
+
   <?php
   if(isset($_COOKIE['user']) == false):
   ?>

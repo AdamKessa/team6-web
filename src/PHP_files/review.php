@@ -2,7 +2,7 @@
 $title = "REVIEWS";
 $css = "../CSS_files/review.css";
 
-include "../PHP_files/header.php" ?>
+include "header.php" ?>
 
 
 
@@ -14,7 +14,7 @@ include "../PHP_files/header.php" ?>
 
 	<h2>Add a Review</h2>
 		<div id="add_reviews">
-			<form id="review-form" method="post" enctype="multipart/form-data" action = "crud/add_review.php"  name = "form" >
+			<form id="review-form" method="post" enctype="multipart/form-data" action = "add_review.php"  name = "form" >
 				<label for="custom-name">Your Name:</label>
 				<input type="text" name="customerName" placeholder="Customer Name" id="customer-name" required><br>
 				
@@ -75,4 +75,4 @@ include "../PHP_files/header.php" ?>
 
 	
 
-<?php include "layout/PHP_files/footer.php" ?>
+<?php include "footer.php" ?>

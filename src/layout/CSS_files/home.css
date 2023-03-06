@@ -69,34 +69,7 @@ body {
   margin-top: 20px;
 } */
 
-ul {
-  
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-  
-}
 
-li a {
-  
-  font-weight: bold;
-  display: block;
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-
-li a:hover {
-  color: orange;
-}
-
-.active {
-  font-size: 14px;
-  color: rgb(255, 123, 0);
-}
 
 /* ---mid------- */
 .mid {
