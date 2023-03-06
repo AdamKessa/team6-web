@@ -69,8 +69,8 @@ body{
     /* margin-left: 135px; */
     /* padding-left: 135%; */
      font-weight: bold;
-    background: linear-gradient(to top, transparent, rgb(0, 0, 0)),
-    url("critters.png") ;
+    background: linear-gradient(to top, transparent, rgb(0, 0, 0));
+    /* url("critters.png") ; */
     border-width: 0;
   }
   .navbar li{

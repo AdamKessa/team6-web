@@ -13,12 +13,13 @@ include "header.php" ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="Home page.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="stylefood.css">
+  
         <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png" >
-        <link rel="stylesheet" href="../CSS_files/food.css">
+        <link rel="stylesheet" href="../layout/CSS_files/food.css">
+        
 
   </head>
   <body>
@@ -49,13 +50,13 @@ include "header.php" ?>
                 </div>
               <div class="col-md-3">               
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/food/food1.jpg" alt="Moroccan tomato salad">
+                  <img class="image2 rounded-circle" src="../layout/images/food/food1.jpg" alt="Moroccan tomato salad">
                   <p>Uzbek Plov</p>
                   <h2> $14.8 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/food/food1.jpg" alt="Moroccan tomato salad" width="100px">  
+                      <img src="../layout/images/food/food1.jpg" alt="Moroccan tomato salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Uzbek Plov</h4>
@@ -71,13 +72,13 @@ include "header.php" ?>
                 </div>
 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/food/food2.jpg" alt="Garden salad">
+                  <img class="image2 rounded-circle" src="../layout/images/food/food2.jpg" alt="Garden salad">
                   <p>Shivit Oshi</p>
                   <h2> $7.66 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/food/food2.jpg" alt="Garden salad" width="100px">  
+                      <img src="../layout/images/food/food2.jpg" alt="Garden salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Shivit Oshi</h4>
@@ -95,13 +96,13 @@ include "header.php" ?>
 
               <div class="col-md-3">                
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/food/food3.JPG" alt="Caesar salad">
+                  <img class="image2 rounded-circle" src="../layout/images/food/food3.JPG" alt="Caesar salad">
                   <p>Shashlik </p>
                   <h2> $8.99/4kpl </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/food/food3.JPG" alt="Caesar salad" width="100px">  
+                      <img src="../layout/images/food/food3.JPG" alt="Caesar salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Shashlik</h4>
@@ -117,13 +118,13 @@ include "header.php" ?>
                 </div>
 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/food/food4.JPG" alt="Spicy Squid Salad">
+                  <img class="image2 rounded-circle" src="../layout/images/food/food4.JPG" alt="Spicy Squid Salad">
                   <p>Kazan Kabob</p>
                   <h2> $9.99  </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/food/food4.JPG" alt="Spicy Squid Salad" width="100px">  
+                      <img src="../layout/images/food/food4.JPG" alt="Spicy Squid Salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Kazan Kabob</h4>
@@ -141,13 +142,13 @@ include "header.php" ?>
               
               <div class="col-md-3"> 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/food/food5.JPG" alt="shanghai salad">
+                  <img class="image2 rounded-circle" src="../layout/images/food/food5.JPG" alt="shanghai salad">
                   <p>Lagman</p>
                   <h2> $11.95 </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/food/food5.JPG" alt="shanghai salad" width="100px">  
+                      <img src="../layout/images/food/food5.JPG" alt="shanghai salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Lagman</h4>
@@ -165,13 +166,13 @@ include "header.php" ?>
                 
 
                 <div class="imagehover2 row mt-5">
-                  <img class="image2 rounded-circle" src="../images/food/food6.JPG" alt="cobb salad">
+                  <img class="image2 rounded-circle" src="../layout/images/food/food6.JPG" alt="cobb salad">
                   <p>Shurpa </p>
                   <h2> $10.85  </h2>
                   <div class="overlay">
                     <div class="modal-header bg-white text-dark"> 
                       <div>
-                      <img src="../images/food/food6.JPG" alt="cobb salad" width="100px">  
+                      <img src="../layout/images/food/food6.JPG" alt="cobb salad" width="100px">  
                       </div>
                       <div>                     
                       <h4 class="modal-title  align-items-start">Shurpa</h4>
@@ -199,8 +200,8 @@ include "header.php" ?>
               </div> 
               <div>
                 <h4><b>Order anywhere, anytime! download our App</h4> 
-                <a href=""><img class="AppStore" src="../images/App Store Badge.png" alt="App Store" width="15px"></a> 
-                <a href=""><img class="AppStore" src="../images/Google Play Store Badge.png" alt="Google Play Store" width="15px"></a> 
+                <a href=""><img class="AppStore" src="../layout/images/App Store Badge.png" alt="App Store" width="15px"></a> 
+                <a href=""><img class="AppStore" src="../layout/images/Google Play Store Badge.png" alt="Google Play Store" width="15px"></a> 
               </div>           
             </div>
             <div class="container">
@@ -218,15 +219,15 @@ include "header.php" ?>
                     </ol>
                     <div class="carousel-inner">
                       <div class="item active carousel-image">
-                        <img src="../images/food/food7.jpg"  class="swipeimage" alt="Los Angeles" style="width:100%;">
+                        <img src="../layout/images/food/food7.jpg"  class="swipeimage" alt="Los Angeles" style="width:100%;">
                       </div>
                 
                       <div class="item carousel-image">
-                        <img src="../images/food/food8.jpg" class="swipeimage"  alt="Chicago" style="width:100%;">
+                        <img src="../layout/images/food/food8.jpg" class="swipeimage"  alt="Chicago" style="width:100%;">
                       </div>
                     
                       <div class="item carousel-image">
-                        <img src="../images/food/food9.jpg" class="swipeimage1" alt="New york" style="width:100%;">
+                        <img src="../layout/images/food/food9.jpg" class="swipeimage1" alt="New york" style="width:100%;">
                       </div>
                     </div>            
                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">

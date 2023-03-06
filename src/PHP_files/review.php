@@ -6,6 +6,12 @@ include "../PHP_files/header.php" ?>
 
 
 
+<head>
+
+  <link rel="stylesheet" href="../layout/CSS_files/review.css">
+</head>
+
+
 	<h2>Add a Review</h2>
 		<div id="add_reviews">
 			<form id="review-form" method="post" enctype="multipart/form-data" action = "crud/add_review.php"  name = "form" >
