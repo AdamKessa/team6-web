@@ -42,7 +42,7 @@
   <div class="top">
     <nav class="navbar navbar-expand-sm navbar-dark fs-3">
       <div class="container-fluid">
-        <img class="" src="images/R3.png" alt="Moroccan tomato salad" width="100px">
+        <img class="" src="../images/R3.png" alt="Moroccan tomato salad" width="100px">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
