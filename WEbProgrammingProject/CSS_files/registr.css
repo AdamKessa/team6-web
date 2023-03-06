@@ -8,5 +8,8 @@
 
 .well
 {
+  width: 80%;
+  padding-left: auto;
+  background-color: black !important;
     padding-left:10% ;
 }

@@ -22,6 +22,6 @@ if(isset($_SESSION['user'])==''):
 
 </div>
 <?php else:?>
-<p class="well">Wellcome <?=$_SESSION['user']['nick']?>. Press <a href="exit.php">log out</a> to exit. </p>
+<h3 class="well"style="background-color: #00000">Wellcome <?=$_SESSION['user']['nick']?>. Press <a href="exit.php">log out</a> to exit. </h3>
 <?php endif;?>
 <?php include "footer.php" ?>

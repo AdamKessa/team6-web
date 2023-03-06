@@ -33,9 +33,9 @@ body {
 
 /* ---mid------- */
 .mid {
-  padding-bottom: 30%;
+  padding-bottom: 20%;
   align-items: center;
-  padding-top: 20%;
+  padding-top: 15%;
   display: block;
   text-align: center;
 }
@@ -277,6 +277,7 @@ float: left;
 
 .FFF
 {
+  padding-left: 2%;
 width: 30%;
 }
 
