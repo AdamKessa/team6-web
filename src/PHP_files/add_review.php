@@ -31,7 +31,7 @@
 			  if (in_array($file_ext, $allowed_ext)) {
 		  
 				// Define the upload directory and target file path
-				$upload_dir = "/uploads/";
+				$upload_dir = "../uploads/";
 				$target_file = $upload_dir . $file_name;
 
 	
