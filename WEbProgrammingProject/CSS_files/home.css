@@ -179,7 +179,7 @@ h3
 article
 {
   
-  background-image: url(images/img6.jpg);
+  background-image: url(../images/img6.jpg);
   background-position: center center;
   min-height: calc(52vh - 50px);
   background-repeat: no-repeat;
