@@ -1,4 +1,3 @@
 <?php
-$db=mysqli_connect("db","asror","asror2003","team6-web");
-
+$db=mysqli_connect("db","team6","team6","team6-web");
 ?>
