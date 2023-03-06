@@ -67,7 +67,7 @@
                     <a class="nav-link nav-link text-light" href="#">BLOG</a>
                   </li>
                   <li class="nav-item" id="reviews">
-                    <a class="nav-link nav-link text-light" href="add_review.php">Reviews</a>
+                    <a class="nav-link nav-link text-light" href="review.php">Reviews</a>
                   </li>
                   <li class="nav-item" id="facebook">
                     <a class="nav-link nav-link text-light" href="#"><i class="bi bi-facebook"></i></a>

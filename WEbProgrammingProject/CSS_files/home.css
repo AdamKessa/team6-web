@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../images/Home.jpg) !important;
+  background-image: url(images/back4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
@@ -30,12 +30,79 @@ body {
 /* -----cont------ */
 
 
+.icon
+{
+  padding-right: 1%;
+}
+
+/* .cont>nav>ul>div
+{
+  
+    font-weight: bold;
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
+
+.cont>nav>ul
+{ 
+  display: flex;
+  float: right;
+  position: fixed;
+  width: 100%;
+  padding-left: 5%; */
+  /* padding-left: 100%; */
+  /* padding-right: 2%; */
+  /* background: linear-gradient(to top, transparent, rgb(0, 0, 0)),
+  url("critters.png") ; 
+
+}*/
+/* nav li
+{
+   margin-top: 20px;
+}
+.nav-link
+{
+  margin-top: 20px;
+} */
+
+ul {
+  
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li a {
+  
+  font-weight: bold;
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  color: orange;
+}
+
+.active {
+  font-size: 14px;
+  color: rgb(255, 123, 0);
+}
 
 /* ---mid------- */
 .mid {
-  padding-bottom: 20%;
+  padding-bottom: 30%;
   align-items: center;
-  padding-top: 15%;
+  padding-top: 20%;
   display: block;
   text-align: center;
 }
@@ -179,7 +246,7 @@ h3
 article
 {
   
-  background-image: url(../images/img6.jpg);
+  background-image: url(images/img6.jpg);
   background-position: center center;
   min-height: calc(52vh - 50px);
   background-repeat: no-repeat;
@@ -277,7 +344,6 @@ float: left;
 
 .FFF
 {
-  padding-left: 2%;
 width: 30%;
 }
 
