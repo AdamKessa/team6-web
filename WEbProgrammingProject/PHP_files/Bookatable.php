@@ -23,7 +23,7 @@ include "header.php" ?>
   <div class="row">
     <div class="col" id="booking" style="background-image: url('../images/istockphoto-1312307362-170667a.jpg')">
       <form action="" method="post" name="myform" onsubmit="return crud()">
-        <label for="sel1" class="form-label">Party size</label>
+        <p class=" text-left">Party size</label>
         <select class="form-select form-select-lg mb-5" id="sel1" name="sellist1">
           <option>1 person</option>
           <option>2 persons</option>
@@ -31,13 +31,13 @@ include "header.php" ?>
           <option>4 persons</option>
           <option>+5 persons</option>
         </select>
-        <div class="row">
-          <label>Please choose Date and Time</label>
+        <p class=" text-left" >Please choose Date and Time</p>
+        <div class="row9">          
           <div class="col-xs-4" id="DateandTime">
-            <input class="w-50 " type="date" name="bdate" placeholder="Date" required>
+            <input id="datetime" class="w-50 " type="date" name="bdate" placeholder="Date" required>
           </div>
           <div class="col-xs-4" id="DateandTime">
-            <input class="w-50" type="time" name="btime" placeholder="Time" required>
+            <input id="datetime" class="w-50" type="time" name="btime" placeholder="Time" required>
           </div>
         </div><br><br>
         <div class="col-xs-6">
@@ -83,11 +83,11 @@ include "header.php" ?>
     <div class="col" id="col2">
       <!-- <img class="image" src="../images/Book2.avif" alt="Moroccan tomato salad">    -->
       <h3><b>Check your reservation here</b></h3>
-      <form action="" method="post" name="myform2"  onsubmit="return crud2()">
+      <form class="reserv" action="" method="post" name="myform2"  onsubmit="return crud2()">
         <input class="form-control w-50" type="text" name="checkreservation" placeholder="Your reservation code"><br>
         <!-- <input class="form-control" type="text" name="email2" placeholder="Email" required><br><br> -->
-        <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check" id="mo2" onmouseover="onm2()"  onmouseout="ono2()" >Check</button>
-        <button type="submit" class="btn btn-primary btn-lg" value="delete your reservation" name="delete" id="mo3" onmouseover="onm3()"  onmouseout="ono3()" >Cancel
+        <button type="submit" class="btn btn-primary btn-lg text-left" value="check your reservation" name="check" id="mo2" onmouseover="onm2()"  onmouseout="ono2()" >Check</button>
+        <button type="submit" class="btn btn-primary btn-lg text-left" value="delete your reservation" name="delete" id="mo3" onmouseover="onm3()"  onmouseout="ono3()" >Cancel
           reservation</button>
       </form>
       <?php

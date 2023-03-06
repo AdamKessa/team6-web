@@ -50,3 +50,12 @@ body {
     /* background-attachment:fixed; */
     background-repeat: no-repeat;
   }
+  .lable{
+    margin-left: 0;
+  }
+  #datetime {    
+    color: black !important;
+}
+*, ::after, ::before {  
+  text-align: left !important;
+}
