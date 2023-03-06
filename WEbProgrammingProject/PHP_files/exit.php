@@ -1,10 +1,7 @@
 <?php
-$title = "Login";
-include "header.php" ?>
-<?php
- setcookie('user',$user['name'],time()-3600,"/");
- header("Location: index.php ");
-
+session_start();
 ?>
-
-<?php include "footer.php" ?>
+<?php
+session_unset(); 
+header("Location: login.php");
+?>

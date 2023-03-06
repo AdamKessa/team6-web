@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../images/back4.jpg);
+  background-image: url(../layout/images/back4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
@@ -16,7 +16,7 @@ body {
 }
 
 .Home-page {
-  background-image: url(../images/PH.jpg);
+  background-image: url(../layout/images/PH.jpg);
   background-position: center center;
   min-height: calc(108vh - 50px);
   background-repeat: no-repeat;

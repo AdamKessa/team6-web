@@ -34,49 +34,55 @@
 </head>
 
 <body>
-   <div>
-
-       <div class="Home-page">
-   
-           <div class="cont">
-   
+<div class="top">
+          <nav class="navbar navbar-expand-sm navbar-dark fs-3">
+            <div class="container-fluid">
+              <img class="login" src="layout/images/R3.png" alt="Moroccan tomato salad" >
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link nav-link text-light" href="home.php"><p style="color: rgb(255, 106, 0);"><b>HOME</b></p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link text-light" href="#">ABOUT US</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-link text-light" href="#" role="button" data-bs-toggle="dropdown">MENU</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item text-white bg-dark" href="index-food.php">FOOD</a></li>
+                      <li><a class="dropdown-item text-white bg-dark" href="index-salad.php">SALAD</a></li>
+                      <li><a class="dropdown-item text-white bg-dark" href="index-drink.php">DRINK</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link text-light" href="#">GALLARY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link text-light" href="#">RESERVATION</a>
+                  </li>  
+                  <li class="nav-item" id="navend">
+                    <a class="nav-link nav-link text-light" href="#">BLOG</a>
+                  </li>
+                  <li class="nav-item" id="reviews">
+                    <a class="nav-link nav-link text-light" href="add_review.php">Reviews</a>
+                  </li>
+                  <li class="nav-item" id="facebook">
+                    <a class="nav-link nav-link text-light" href="#"><i class="bi bi-facebook"></i></a>
+                  </li> 
+                  <li class="nav-item" id="twitter">
+                    <a class="nav-link nav-link text-light" href="#"><i class="bi bi-twitter"></i></a>
+                  </li>                                   
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
                
-               <nav>
-                   <ul >
-                    
-                    <img class="" src="layout/images/R3.png" alt="Moroccan tomato salad" width="100px" height="100px">    
-                   
-                        
-                       <li><a class="active"  style="font-size:17px ;"  href="home.php">HOME</a></li>
-                       <div>
-                       <div class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown">MENU</a>
-                          <div class="dropdown-menu">
-                              <a href="index-food.php" class="dropdown-item text-white bg-dark">FOOD</a>
-                              <a href="index-salad.php" class="dropdown-item text-white bg-dark">SALAD</a>
-                              <a href="index-drink.php" class="dropdown-item text-white bg-dark">DRINK</a>
-                          </div>
-                      </div>
-                       </div>
-                       
-                       
-                       <li><a href="#">GALLERY</a></li>
-                       <li><a href="#">ABOUT US</a></li>
-                       <li><a href="#">LOCATION</a></li>
-                       <li class="blog"> <a href="">BLOG</a> </li>
-   
-                       <!--     Add icon library    -->
-                       
-                       <li class="face">
-                           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-                           <a href="#" class="fa fa-facebook"></a>
-                           <a href="#" class="fa fa-twitter"></a>
-                       </li>
-                       <li class="face"> </a> </li>
-   
-                   </ul>
-               </nav>
-               </div>
+               
+         
     
    
        

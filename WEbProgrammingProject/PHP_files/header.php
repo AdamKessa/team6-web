@@ -23,7 +23,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png">
   <link rel="stylesheet" href="../CSS_files/style.css">
+<<<<<<< HEAD
   <link rel="stylesheet" href="../CSS_files/header.css">
+=======
+  <link rel="stylesheet" href="../CSS_files/registr.css">
+>>>>>>> dbab86a100e0191ba529d537368e83dff501a18a
   <link rel="stylesheet" href="../CSS_files/register.css">
   <script src="../js/register.js"></script>
   <script src="../js/BookaTable.js"></script>
@@ -49,7 +53,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link nav-link text-light" href="home.php">
+              <a class="nav-link nav-link text-light" href="index.php">
                 <p style="color: rgb(255, 106, 0);"><b>HOME</b></p>
               </a>
             </li>
@@ -75,9 +79,7 @@
             <li class="nav-item">
               <a class="nav-link nav-link text-light" href="login.php">Login</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link text-light" href="register.php">Sign up</a>
-            </li>
+        
             <li class="nav-item" id="navend">
               <a class="nav-link nav-link text-light" href="">BLOG</a>
             </li>
