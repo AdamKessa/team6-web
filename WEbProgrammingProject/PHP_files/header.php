@@ -298,10 +298,17 @@
             <li class="nav-item">
               <a class="nav-link nav-link text-light" href="Bookatable.php">RESERVATION</a>
             </li>
+            <?php
+if(isset($_SESSION['user'])==''):
+?>
             <li class="nav-item">
               <a class="nav-link nav-link text-light" href="login.php">Login</a>
             </li>
-        
+            <?php else:?>
+              <li class="nav-item">
+              <a class="nav-link nav-link text-light" href="login.php">Log out</a>
+            </li>
+<?php endif;?>
             <li class="nav-item" id="navend">
               <a class="nav-link nav-link text-light" href="">BLOG</a>
             </li>
