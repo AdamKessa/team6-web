@@ -18,7 +18,7 @@ include "header.php" ?>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
         <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png" >
-        <link rel="stylesheet" href="../CSS_files/food.css">
+        <link rel="stylesheet" href="../../CSS_files/food.css">
 
   </head>
   <body>
