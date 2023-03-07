@@ -14,27 +14,27 @@ include "header.php" ?>
 <head>
 	<h2> Bug report page </h2>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS_files/style.css">
+    <link rel="stylesheet" href="../CSS_files/reportBug.css">
 
 </head>
 <body>
-	<div class="container">
+	<div class="container" style="text-align: left;">
 		<h1>Describe the bug you encountered</h1>
 		<!--Form to type bug message-->
 		<form action="" method="post"name="reportBug" onsubmit="return validateform()">
 			<div class="form-group">
-				<label style="color : white;" for="name">Name:</label>
-				<input type="text" class="form-control" id="name1" name="name1">
+				<p class=" text-left" style="color : white; font-size: 25px" for="name">Name:</label>
+				<input type="text" class="form-control w-50 p-3" id="name" name="name">
 			</div>
 			<div class="form-group">
-				<label style="color : white;" for="email">Email:</label>
-				<input type="email" class="form-control" id="email" name="email">
+				<p class=" text-left" style="color : white; font-size: 25px" for="email">Email:</label>
+				<input type="email" class="form-control w-50 p-3" id="email" name="email">
 			</div>
 			<div class="form-group">
-				<label style="color : white;" for="message">Message:</label>
-				<textarea class="form-control" id="message" name="message"></textarea>
+				<p class=" text-left" style="color : white; font-size: 25px" for="message">Message:</label>
+				<textarea class="form-control w-50 p-3" id="message" name="message"></textarea>
 			</div>
-			<button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Submit</button>
+			<button  type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Submit</button>
 
 			<?php
 

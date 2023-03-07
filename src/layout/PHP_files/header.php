@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="../CSS_files/register.css">
   <script src="../js/register.js"></script>
   <script src="../js/BookaTable.js"></script>
+  <script src="../js/reportBug.js"> </script>
 
 
   <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png">
@@ -67,6 +68,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link text-light" href="Bookatable.php">RESERVATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link text-light" href="reportBug.php">Report Bug</a>
             </li>
             <?php
 if(isset($_SESSION['user'])==''):
