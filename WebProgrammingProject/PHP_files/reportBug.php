@@ -15,14 +15,16 @@ include "header.php" ?>
 	<h2> Bug report page </h2>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS_files/style.css">
+
 </head>
 <body>
 	<div class="container">
 		<h1>Describe the bug you encountered</h1>
-		<form action="" method="post">
+		<!--Form to type bug message-->
+		<form action="" method="post"name="reportBug" onsubmit="return validateform()">
 			<div class="form-group">
 				<label style="color : white;" for="name">Name:</label>
-				<input type="text" class="form-control" id="name" name="name">
+				<input type="text" class="form-control" id="name1" name="name1">
 			</div>
 			<div class="form-group">
 				<label style="color : white;" for="email">Email:</label>
@@ -36,43 +38,50 @@ include "header.php" ?>
 
 			<?php
 
+		//declaring form input data to variables 
         if (isset($_POST['submit'])) {
           $name = $_POST['name'];
           $email = $_POST['email'];
           $message = $_POST['message'];
-
+		
+		//calling for reportBug-db.php to connect to database
           include 'reportBug-db.php';
+
+		//declaring sql queries to be executed
           $sql1 = "insert into reportBug (name, email, message) values('$name',
               '$email', '$message')";
 			$sql2 = "SELECT message_id FROM reportBug ORDER BY message_id DESC LIMIT 1";
 			$result2 = mysqli_query($conn, $sql2);
 
+		//checking if sql1 statement is executed
           if ($conn->query($sql1) == True) {
             echo "<br><br>" . " <div style ='font:25px Arial,tahoma,sans-serif;color:#F05C25';padding-left: 30px> Your bug report was successfully received</div>";
           } else {
             echo "Error : please check your information" . $conn->error;
           }
-
+		  
+		//checking if sql2 statement is executed
 		  if (mysqli_num_rows($result2) > 0) {
-			// Loop through the results and output  data
+			// print latest added message_ID of user
 			while($row = mysqli_fetch_assoc($result2)) {
-				echo "<h3 style= 'color:#FFFFFF' > The ID of your report is {$row['message_id']} . </h3>";
+				// message_id is the id of the latest message that isnt yet input by the user so we fix that by adding 1 to it.
+				$real_message_id = $row['message_id'] + 1;
+				echo "<h3 style= 'color:#FFFFFF' > The ID of your report is {$real_message_id } . </h3>" ;
 		  
         }
 	}
 }
+?>
 
-		
-			
-        ?>
-
+<!-- <h2  style= 'color:#FFFFFF' ><b>Check your bug report</b></h2 >
+<br><br>
+      <form action="" method="post">
+        <input class="form-control w-50" type="text" name="message_ID" placeholder="Your report ID"><br>
+      
+        <button type="submit" class="btn btn-primary btn-lg" value="check your reservation" name="check">Check</button>
 		</form>
-	</div>
+	</div> -->
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	
-
-
 
 <?php include "footer.php" ?>

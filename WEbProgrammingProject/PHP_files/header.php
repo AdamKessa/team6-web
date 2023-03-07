@@ -215,7 +215,7 @@ hr.style1{
     <link rel="stylesheet" href="style.css">
         <link rel="icon" href="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png" >
         <!-- javascript-->
-    <script src="../js/site.js"> </script>
+    <script src="../js/reportBug.js"> </script>
 
   </head>
  
