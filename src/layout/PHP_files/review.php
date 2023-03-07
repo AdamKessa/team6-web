@@ -11,12 +11,13 @@ include "header.php" ?>
   <link rel="stylesheet" href="../CSS_files/review.css">
 </head>
 
+<script src="../js/review.js"></script>
 
 	<h2>Add a Review</h2>
 		<div id="add_reviews">
-			<form id="review-form" method="post" enctype="multipart/form-data" action = "add_review.php"  name = "form" >
+			<form id="review-form" method="post" enctype="multipart/form-data" action = "add_review.php"  name = "form">
 				<label for="custom-name">Your Name:</label>
-				<input type="text" name="customerName" placeholder="Customer Name" id="customer-name" required><br>
+				<input type="text" name="customerName" placeholder="Customer Name" id="customer-name" maxlength="20" required><br>
 				
 				<label for="rating">Rating:</label>
 				<select name="rating" id = "rating">
@@ -28,14 +29,15 @@ include "header.php" ?>
 				</select><br>
 
 				<!-- <label for="review-text">Review:</label> -->
-				<textarea name="review_text" placeholder="Write something here."></textarea><br>
+				<textarea name="reviewText" placeholder="Write your review here Please. Maximum 1000 words" maxlength="1000"required></textarea><br>
 
-				<label for="image">Image:</label>
-				<input type="file" id="review_image" name="image"><br>	
-
+				<label for="imageUpload">Image:</label>
+				<input type="file" id="imageUpload" name="image" onchange="checkFileSize()" required><br>	
+                
 				<button type="submit" id ="addreviewbutton" name="submit">SubmitReview</button>
 				
 			</form>
+
 			
 		</div>
 

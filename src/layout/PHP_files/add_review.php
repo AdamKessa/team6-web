@@ -5,7 +5,7 @@
 	 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$name = $_POST['customerName'];
 		$rating = $_POST['rating'];
-		$review = $_POST['review_text'];
+		$review = $_POST['reviewText'];
 
         echo $_FILES['image']['tmp_name'] ;
 		
@@ -17,6 +17,8 @@
 		  
 			  // Get the size of the uploaded file
 			  $file_size = $_FILES['image']['size'];
+
+			 
 		  
 			  // Get the temporary location of the uploaded file
 			  $file_tmp = $_FILES['image']['tmp_name'];

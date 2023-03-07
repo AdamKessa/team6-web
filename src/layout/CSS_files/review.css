@@ -262,7 +262,7 @@ body{
 /* reviews */
  /* reviews page*/
 #add_reviews input{
-  
+      
     margin: 0 auto;
     color: black ;
     padding: 2px;
@@ -280,8 +280,8 @@ body{
 
 
 
-#review_image{
-
+#add_image input{
+    width: 100px;
     margin-left: 30px ;    
 }
 
