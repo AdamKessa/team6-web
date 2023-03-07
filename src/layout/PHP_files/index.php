@@ -90,7 +90,7 @@ include "header.php" ?>
                             alt="" class="pic">
                         <img src="https://bystryerecepty.ru/wp-content/uploads/2022/06/blobid1530258764605.jpg" alt=""
                             class="pic">
-                        <img src="images/sumalyak.jpg" alt="" class="pic">
+                        <img src="../images/sumalyak.jpg" alt="" class="pic">
 
                     </div>
                 </article>
