@@ -1,0 +1,17 @@
+.log_sign
+{
+    width: 40%;
+    display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.well
+{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  background-color: black !important;
+    padding-left:10% ;
+}

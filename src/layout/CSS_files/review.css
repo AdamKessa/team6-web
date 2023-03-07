@@ -1,3 +1,7 @@
+/* -----cont------ */
+
+
+
 body{
     background-image: url(../images/salad.jpg);
     color: white;
@@ -42,21 +46,14 @@ body{
     outline: none;
     box-shadow: none;
   }
-  h1 {
-    font-family: 'Dancing Script', cursive !important;
-    font-size:55px !important;
-    text-align: center;
-    color:white !important;
+  h1{
+    margin-top: 10px;
+    font-family: 'Dancing Script', cursive; font-size: 40px;
   }
-  .col-md-3 p{
-    color:white;
-    text-align:center;
   
-  }
   h2 {
-    font-size: 25px !important;
-    color:rgb(255, 119, 0) !important;
-    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 119, 0);
   }
   a, nav a:visited, nav a:active{
     text-decoration: none; 
@@ -72,8 +69,8 @@ body{
     /* margin-left: 135px; */
     /* padding-left: 135%; */
      font-weight: bold;
-    background: linear-gradient(to top, transparent, rgb(0, 0, 0)),
-    url("critters.png") ;
+    background: linear-gradient(to top, transparent, rgb(0, 0, 0));
+    /* url("critters.png") ; */
     border-width: 0;
   }
   .navbar li{
@@ -82,7 +79,7 @@ body{
     border-width: 0;
   }
   #navend {
-    border-right: 2px solid gray;
+  /*  border-right: 2px solid gray; */
     padding-right: 5px;
   }
   #facebook, #twitter{
@@ -122,6 +119,8 @@ body{
     background-color:transparent;
     z-index:1;
   }
+ 
+  
   
   .imagehover2:hover .overlay {
     opacity: 1;
@@ -218,12 +217,10 @@ body{
     margin-top: 100px;
   }
   .col-md-6{
-    left: 0%;
+    left: 10%;
   
   }
-  .modal-body p{
-    color:black !important;
-  }
+  
   
   @media (min-width: 1200px){
   .container {
@@ -258,6 +255,108 @@ body{
   }
   }
   
-  .AppStore {
+  .googleStore {
     width: 100px;
   }
+
+/* reviews */
+ /* reviews page*/
+#add_reviews input{
+  
+    margin: 0 auto;
+    color: black ;
+    padding: 2px;
+ 
+}
+#add_reviews textarea{
+  margin-left: 45px;
+  margin: 5 auto;
+  color: black ;
+  padding: 2px;
+  width: 400px;
+  height: 100px;
+
+}
+
+
+
+#review_image{
+
+    margin-left: 30px ;    
+}
+
+#addreviewbutton{
+  display: inline-block;
+  padding: 12px 48px;
+ 
+  font-weight: bold;
+  text-align: center;
+  color: orange;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#rating{
+
+  color: #f00;
+}
+#rating option{
+    color: #f00;
+}
+
+
+#reviewform {
+  color:white;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: orange;
+}
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #d68c4200;
+    box-shadow: 5px 5px 10px 5px rgba(#ffc107);
+    margin-top: 30px;
+}
+.review {
+    width: 100%;
+    
+    height: auto;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    background-color: #c5c1bb00;
+}
+.review h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #2df3a3;
+}
+.review p {
+    font-size: 1em;
+    color: #f3f3f3;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.review span {
+    font-size: 1.5em;
+    color: #f00;
+}
+.review img {
+  width: 95%;
+  height: 500px;
+
+}

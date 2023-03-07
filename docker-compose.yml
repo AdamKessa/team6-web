@@ -15,7 +15,7 @@ services:
     image: mysql:latest
     restart: always #this restarts the service upon any configuration changes
     environment: # to use and access MySQL server,we neet to set up an authentication environment
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: team6
     ports:
       - "6034:3306"   #6034 in the the local machine and 3306 in the container
     volumes: # it persists updates made to the database

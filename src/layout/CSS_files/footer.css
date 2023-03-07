@@ -1,40 +1,30 @@
-body{
-    background-image: url(../images/salad.jpg);
+body {
+    /* background-image: url(images/salad.jpg); */
     color: white;
     text-align: center;    
     background-size: cover;
     background-attachment:fixed;
     background-repeat: no-repeat;
-    display: flex;
-    flex-flow: column;
-    overflow-x: hidden; 
-  }
-  
-  
-  nav{
-    margin: 0;
+    mmargin-top: 90px;
     
   }
-  
-  
-  .login{
-    width: 100px;
+  #content {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    
   }
-  
-  
   .top {
     /* margin-left: 10%; */
-  
-  
+    height: 100%;
+   
     
   }
-  .menufood{
-    margin-left: 10%;
-    margin-right: 10%;
-   
-  }
   .mt-5 {
-    font-size: 16px;
+    font-size: 17px;
+  }
+  #Linediv {
+    display: contents;
   }
   .form-control:active,
   .form-control:focus {
@@ -43,23 +33,17 @@ body{
     box-shadow: none;
   }
   h1 {
-    font-family: 'Dancing Script', cursive !important;
-    font-size:55px !important;
-    text-align: center;
-    color:white !important;
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
   }
-  .col-md-3 p{
-    color:white;
-    text-align:center;
   
-  }
+  
   h2 {
-    font-size: 25px !important;
-    color:rgb(255, 119, 0) !important;
-    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 119, 0);
   }
   a, nav a:visited, nav a:active{
-    text-decoration: none; 
+    text-decoration: none !important; 
     color: rgb(255, 255, 255);
     font-weight: bold;
   }
@@ -67,33 +51,27 @@ body{
     color: rgb(255, 138, 4);
   }
   nav {
+    
     /* margin-top: 10px; */
-    width: 100%;
+    /* width: 85%; */
     /* margin-left: 135px; */
-    /* padding-left: 135%; */
-     font-weight: bold;
-    background: linear-gradient(to top, transparent, rgb(0, 0, 0)),
-    url("critters.png") ;
-    border-width: 0;
-  }
-  .navbar li{
-    margin-left:5px;
-    margin-right:5px;
-    border-width: 0;
+    position: fixed;
+    width: 85%;
+    font-weight: bold;
   }
   #navend {
     border-right: 2px solid gray;
     padding-right: 5px;
   }
+  .dropdown-item {
+    font-size: 20px;
+  }
+  .navbar li{
+    margin-left:5px;
+    margin-right:5px;
+  }
   #facebook, #twitter{
     padding-left: 5px;
-  }
-  .dropdown-item {
-      font-size: 20px;
-  }
-  .navbar
-  {
-    border-width: 0;
   }
   .modal-footer p, .overlay .btn p {
     padding-top: 6px;
@@ -110,7 +88,7 @@ body{
     height: 100%;
   }
   .overlay {
-    position:absolute;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -120,7 +98,6 @@ body{
     opacity: 0;
     transition: .5s ease;
     background-color:transparent;
-    z-index:1;
   }
   
   .imagehover2:hover .overlay {
@@ -139,17 +116,21 @@ body{
     text-align: center;
   }
   #footer1 {
-    margin: 0 auto; 
-    margin-top: 20px;
+    margin: 0 auto;
     background-color: rgb(172, 107, 72);
-    height: 100%;
+    height: 300px !important;
     color: white;
     text-align: center;
-    padding:0 10% 5px 10%;
+    ffont-size: 20px;
     ppadding-left: 5px;
+    display: flex;
+    padding:0 10% 5px 10%;
   }
   h3{
     font-family: 'Frutiger', cursive; font-size: 35px;
+  }
+  #footer3text {
+    padding-left: 12%;
   }
   #footer2 {
     margin: 0 auto;
@@ -157,45 +138,25 @@ body{
     color: white;
     text-align: center;
     font-size: 19px;
-  
-    hheight: 320px;
+    padding-top: 5px;
+    hheight: 270px;
     bbackground-image: url(images/back2.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
-    
-    
-  }
-  #Dubai{
-    width: 270px; 
-    height: 350px;
-  }
-  
-  .carousel-inner{
-    
-    text-align: center;
-    height: 360px;
-    
   }
   .carousel-image  {
-    position: absolute; 
-    
-    
-    
+    height: 308.49px;
+    wwidth: 290px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
   }
-  .swipeimage{
-    position: relative;
-    bottom:20%;
+  #Dubai {
+    smargin-left: 250px;
   }
-  
-  .swipeimage1{
-    position: relative;
-    bottom:10%;
-  }
-  
   #footer3 {
-    margin-top: 10px;
-    
-    abackground-color: rgb(171, 98, 35);
+    margin: 0 auto;
+    vbackground-color: rgb(56, 56, 56);
     height: 100%;
     color: white;
     text-align: start;
@@ -203,7 +164,7 @@ body{
     padding-left: 5px;
     padding-top: 15px;
     height: 346px;
-    background-image: url(images/back4.jpg);
+    background-image: url(../images/back4.jpg);
     background-repeat: no-repeat;
     background-size:cover;
   }
@@ -211,18 +172,10 @@ body{
     border-top: 4px solid #fefefe;
   }
   #firstcol {
-    padding-top: 15px;
+    padding: 15px 0 0 0;
   }
-  
-  .imagehover2 row mt-5{
-    margin-top: 100px;
-  }
-  .col-md-6{
-    left: 0%;
-  
-  }
-  .modal-body p{
-    color:black !important;
+  .AppStore {
+    width: 100px;
   }
   
   @media (min-width: 1200px){
@@ -230,34 +183,12 @@ body{
     width: 100%;
   }
   }
-  @media (max-width: 900px) {
+  @media (max-width: 791px) {
     nav {
       /* margin-top: 20px; */
-      width: 100%;
-      margin-left: 0;
+      /* width: 85%; */
+      /* margin-left: 0; */
       position: relative;
       justify-content: center;
   }
-  .swipeimage{
-    position: relative;
-    bottom: 0%;
-  }
-  .swipeimage1{
-    position: relative;
-    bottom: 0%;
-  }
-  #Dubai{
-    width: 270px; 
-    height: 300px;
-  }
-  .carousel-inner{
-    
-    text-align: center;
-    height: 320px;
-    
-  }
-  }
-  
-  .AppStore {
-    width: 100px;
   }
