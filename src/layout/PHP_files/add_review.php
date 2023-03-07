@@ -31,7 +31,7 @@
 			  if (in_array($file_ext, $allowed_ext)) {
 		  
 				// Define the upload directory and target file path
-				$upload_dir = "../uploads/";
+				$upload_dir = "../../uploads/";
 				$target_file = $upload_dir . $file_name;
 
 	
@@ -56,7 +56,7 @@
 
 
 
-		include '../crud/db.php';
+		include '../../crud/db.php';
 
 		// insert the review into the database
 		$sql = "INSERT INTO reviews (customerName, rating, review_text, review_image) VALUES ('$name', '$rating', '$review' ,'$target_file')";

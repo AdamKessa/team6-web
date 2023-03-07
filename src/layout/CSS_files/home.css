@@ -30,52 +30,12 @@ body {
 /* -----cont------ */
 
 
-.icon
-{
-  padding-right: 1%;
-}
-
-/* .cont>nav>ul>div
-{
-  
-    font-weight: bold;
-  display: block;
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none
-}
-
-.cont>nav>ul
-{ 
-  display: flex;
-  float: right;
-  position: fixed;
-  width: 100%;
-  padding-left: 5%; */
-  /* padding-left: 100%; */
-  /* padding-right: 2%; */
-  /* background: linear-gradient(to top, transparent, rgb(0, 0, 0)),
-  url("critters.png") ; 
-
-}*/
-/* nav li
-{
-   margin-top: 20px;
-}
-.nav-link
-{
-  margin-top: 20px;
-} */
-
-
 
 /* ---mid------- */
 .mid {
-  padding-bottom: 30%;
+  padding-bottom: 20%;
   align-items: center;
-  padding-top: 20%;
+  padding-top: 15%;
   display: block;
   text-align: center;
 }
@@ -219,7 +179,7 @@ h3
 article
 {
   
-  background-image: url(../images/img6.jpg) !important;
+  background-image: url(../images/img6.jpg);
   background-position: center center;
   min-height: calc(52vh - 50px);
   background-repeat: no-repeat;
@@ -317,7 +277,8 @@ float: left;
 
 .FFF
 {
-width: 30%;
+  padding: 5%;
+  width: 30%;
 }
 
 /* END MIDLE*/

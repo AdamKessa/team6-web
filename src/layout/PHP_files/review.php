@@ -8,7 +8,7 @@ include "header.php" ?>
 
 <head>
 
-  <link rel="stylesheet" href="../layout/CSS_files/review.css">
+  <link rel="stylesheet" href="../CSS_files/review.css">
 </head>
 
 
@@ -45,7 +45,7 @@ include "header.php" ?>
 		<?php
 			// Connect to the database
 			
-			include '../crud/db.php';
+			include '../../crud/db.php';
 			// Retrieve reviews data
 			$sql = 'SELECT * FROM reviews';
 			$result = mysqli_query($conn, $sql);
