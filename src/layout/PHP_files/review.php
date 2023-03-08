@@ -29,10 +29,10 @@ include "header.php" ?>
 				</select><br>
 
 				<!-- <label for="review-text">Review:</label> -->
-				<textarea name="reviewText" placeholder="Write your review here Please. Maximum 1000 words" maxlength="1000"required></textarea><br>
+				<textarea name="reviewText" placeholder="Write your review here Please. Maximum 1000 words" maxlength="1000" required></textarea><br>
 
 				<label for="imageUpload">Image:</label>
-				<input type="file" id="imageUpload" name="image" onchange="checkFileSize()" required><br>	
+				<input type="file" id="imageUpload" name="image" onchange="checkImage()" required><br>	
                 
 				<button type="submit" id ="addreviewbutton" name="submit">SubmitReview</button>
 				
