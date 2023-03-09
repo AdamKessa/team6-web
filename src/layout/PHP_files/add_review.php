@@ -50,11 +50,10 @@
 	  		}		
 		}
 
-
-
-	   var_dump($_FILES);
-		var_dump($file_name);
-		var_dump($target_file);
+// for testing the file upload function.
+	//    var_dump($_FILES);
+	// 	var_dump($file_name);
+	// 	var_dump($target_file);
 
 
 
